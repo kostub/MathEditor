@@ -1,0 +1,20 @@
+PODS:
+  - iosMath (0.6.2)
+  - iosMathEditor (0.1.0):
+    - iosMath (~> 0.6.2)
+
+DEPENDENCIES:
+  - iosMath
+  - iosMathEditor (from `../`)
+
+EXTERNAL SOURCES:
+  iosMathEditor:
+    :path: ../
+
+SPEC CHECKSUMS:
+  iosMath: bd15bdc71a14b36eaeea8037604a8c8d7fccc74a
+  iosMathEditor: b7a0dd50e234f47bf18a10c8bb1e72807e7fa841
+
+PODFILE CHECKSUM: d36d9db4a48395ba20ab2354fa0dca3ebdbf701a
+
+COCOAPODS: 1.0.0
