@@ -17,9 +17,6 @@
 #import "MTCaretView.h"
 #import "MTMathList+Editing.h"
 #import "MTDisplay+Editing.h"
-#import "MCKeyboard.h"
-
-#import "MCMathKeyboardRootView.h"
 
 #import "MTUnicode.h"
 #import "MTMathListBuilder.h"

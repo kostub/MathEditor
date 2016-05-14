@@ -1,9 +1,8 @@
 target 'iosMathEditor_Example' do
   pod 'iosMathEditor', :path => '../'
-
-  target 'iosMathEditor_Tests' do
-    inherit! :search_paths
-  end
+end
+target 'iosMathEditor_Tests' do
+  pod 'iosMathEditor', :path => '../'
 end
 target 'iosMathEditor' do
     pod 'iosMath'
