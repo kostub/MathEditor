@@ -15,6 +15,7 @@
 #import "MTMathListDisplay.h"
 #import "MTDisplay+Editing.h"
 #import "MTMathListBuilder.h"
+#import "MTFontManager.h"
 
 @interface MTDisplayEditingTest : XCTestCase
 
@@ -29,8 +30,8 @@
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     CGFloat fontSize = 20;
-    //_font = [[MTFontManager fontManager] createCTFontFromDefaultFont:fontSize];
-    // CFRetain(_font);
+    _font = [[MTFontManager fontManager] createCTFontFromDefaultFont:fontSize];
+    CFRetain(_font);
 }
 
 - (void)tearDown
