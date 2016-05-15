@@ -11,7 +11,6 @@
 		490BE56F1CE6962400AE31A0 /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE55F1CE6962400AE31A0 /* MTMathListIndex.m */; };
 		490BE5701CE6962400AE31A0 /* MTMathList+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5611CE6962400AE31A0 /* MTMathList+Editing.m */; };
 		490BE5711CE6962400AE31A0 /* MTDisplay+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5631CE6962400AE31A0 /* MTDisplay+Editing.m */; };
-		490BE5741CE6962400AE31A0 /* MTKeyboardContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5691CE6962400AE31A0 /* MTKeyboardContext.m */; };
 		490BE5751CE6962400AE31A0 /* MTEditableMathUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE56B1CE6962400AE31A0 /* MTEditableMathUILabel.m */; };
 		490BE5761CE6962400AE31A0 /* MTCaretView.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE56D1CE6962400AE31A0 /* MTCaretView.m */; };
 		490BE5781CE6A08100AE31A0 /* MTDisplayEditingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5771CE6A08100AE31A0 /* MTDisplayEditingTest.m */; };
@@ -64,8 +63,6 @@
 		490BE5621CE6962400AE31A0 /* MTMathList+Editing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MTMathList+Editing.h"; path = "../../iosMathEditor/Classes/MTMathList+Editing.h"; sourceTree = "<group>"; };
 		490BE5631CE6962400AE31A0 /* MTDisplay+Editing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MTDisplay+Editing.m"; path = "../../iosMathEditor/Classes/MTDisplay+Editing.m"; sourceTree = "<group>"; };
 		490BE5641CE6962400AE31A0 /* MTDisplay+Editing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MTDisplay+Editing.h"; path = "../../iosMathEditor/Classes/MTDisplay+Editing.h"; sourceTree = "<group>"; };
-		490BE5691CE6962400AE31A0 /* MTKeyboardContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTKeyboardContext.m; path = ../../iosMathEditor/Classes/MTKeyboardContext.m; sourceTree = "<group>"; };
-		490BE56A1CE6962400AE31A0 /* MTKeyboardContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTKeyboardContext.h; path = ../../iosMathEditor/Classes/MTKeyboardContext.h; sourceTree = "<group>"; };
 		490BE56B1CE6962400AE31A0 /* MTEditableMathUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTEditableMathUILabel.m; path = ../../iosMathEditor/Classes/MTEditableMathUILabel.m; sourceTree = "<group>"; };
 		490BE56C1CE6962400AE31A0 /* MTEditableMathUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTEditableMathUILabel.h; path = ../../iosMathEditor/Classes/MTEditableMathUILabel.h; sourceTree = "<group>"; };
 		490BE56D1CE6962400AE31A0 /* MTCaretView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTCaretView.m; path = ../../iosMathEditor/Classes/MTCaretView.m; sourceTree = "<group>"; };
@@ -145,8 +142,6 @@
 				490BE5621CE6962400AE31A0 /* MTMathList+Editing.h */,
 				490BE5631CE6962400AE31A0 /* MTDisplay+Editing.m */,
 				490BE5641CE6962400AE31A0 /* MTDisplay+Editing.h */,
-				490BE5691CE6962400AE31A0 /* MTKeyboardContext.m */,
-				490BE56A1CE6962400AE31A0 /* MTKeyboardContext.h */,
 				490BE56B1CE6962400AE31A0 /* MTEditableMathUILabel.m */,
 				490BE56C1CE6962400AE31A0 /* MTEditableMathUILabel.h */,
 				490BE56D1CE6962400AE31A0 /* MTCaretView.m */,
@@ -511,7 +506,6 @@
 				490BE5751CE6962400AE31A0 /* MTEditableMathUILabel.m in Sources */,
 				490BE56F1CE6962400AE31A0 /* MTMathListIndex.m in Sources */,
 				490BE5701CE6962400AE31A0 /* MTMathList+Editing.m in Sources */,
-				490BE5741CE6962400AE31A0 /* MTKeyboardContext.m in Sources */,
 				490BE5761CE6962400AE31A0 /* MTCaretView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

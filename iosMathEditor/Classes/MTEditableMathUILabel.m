@@ -162,9 +162,7 @@
 
 - (UIView *)inputView
 {
-    // TODO: Return the keyboard
-    // return _keyboard;
-    return nil;
+    return self.keyboard;
 }
 
 /**
@@ -184,8 +182,7 @@
             _insertionIndex = [MTMathListIndex level0Index:self.mathList.atoms.count];
         }
 
-        // TODO: Use delegate
-        // [_keyboard setEditableMathUILabel:self];
+        [self.keyboard startedEditing:self];
         
         [self insertionPointChanged];
         [self.delegate didBeginEditing:self];
@@ -204,8 +201,7 @@
 {
     BOOL val = YES;
     if ([self isFirstResponder]) {
-        // TODO: Use delegate
-        // [_keyboard setEditableMathUILabel:nil];
+        [self.keyboard finishedEditing:self];
          val = [super resignFirstResponder];
         [self insertionPointChanged];
         [self.delegate didEndEditing:self];
@@ -369,29 +365,24 @@
 
 - (void) setKeyboardMode
 {
-    MTKeyboardContext* context = [self.keyboardContext copy];
-    
-    context.exponentHighlighted = NO;
+    self.keyboard.exponentHighlighted = NO;
     if ([_insertionIndex hasSubIndexOfType:kMTSubIndexTypeSuperscript]) {
-        context.exponentHighlighted = YES;
-        context.equalsAllowed = NO;        
+        self.keyboard.exponentHighlighted = YES;
+        self.keyboard.equalsAllowed = NO;
     }
     if (_insertionIndex.subIndexType == kMTSubIndexTypeNumerator) {
-        context.equalsAllowed = false;
+        self.keyboard.equalsAllowed = false;
     } else if (_insertionIndex.subIndexType == kMTSubIndexTypeDenominator) {
-        //context.fractionsAllowed = false;
-        //context.equalsAllowed = false;
+        //self.keyboard.fractionsAllowed = false;
+        //self.keyboard.equalsAllowed = false;
     }
     
     // handle radicals
     if (_insertionIndex.subIndexType == kMTSubIndexTypeDegree) {
-        context.radicalHighlighted = YES;
+        self.keyboard.radicalHighlighted = YES;
     } else if (_insertionIndex.subIndexType == kMTSubIndexTypeRadicand) {
-        context.squareRootHighlighted = YES;
+        self.keyboard.squareRootHighlighted = YES;
     }
-
-    // TODO: Use a delegate here.
-    // [_keyboard setKeyboardContext:context];
 }
 
 - (void)insertMathList:(MTMathList *)list atPoint:(CGPoint)point
@@ -914,9 +905,7 @@
 #pragma mark - UITextInput
 
 // These are blank just to get a UITextInput implementation, to fix the dictation button bug.
-// https://fabric.io/mathchat-inc/ios/apps/com.getmathchat.mathchat/issues/548fb09865f8dfea15593d5f
 // Proposed fix from: http://stackoverflow.com/questions/20980898/work-around-for-dictation-custom-text-view-bug
-// TODO: Remove this code when we stop using the apple keyboard for math input, and thus not have a dictation button.
 
 @synthesize beginningOfDocument;
 @synthesize endOfDocument;
