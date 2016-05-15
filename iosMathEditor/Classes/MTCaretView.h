@@ -10,13 +10,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class MTEditableMathUILabel;
+@class MTEditableMathLabel;
 
 @interface MTCaretView : UIView
 
 @property (nonatomic) UIColor* caretColor;
 
-- (id) initWithEditor:(MTEditableMathUILabel*)label;
+- (id) initWithEditor:(MTEditableMathLabel*)label;
 
 - (void)delayBlink;
 

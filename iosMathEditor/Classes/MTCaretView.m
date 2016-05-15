@@ -9,7 +9,7 @@
 //
 
 #import "MTCaretView.h"
-#import "MTEditableMathUILabel.h"
+#import "MTEditableMathLabel.h"
 
 static const NSTimeInterval InitialBlinkDelay = 0.7;
 static const NSTimeInterval BlinkRate = 0.5;
@@ -29,7 +29,7 @@ static NSInteger getCaretHeight() {
 
 @interface MTCaretHandle : UIView
 
-@property (nonatomic, weak) MTEditableMathUILabel* label;
+@property (nonatomic, weak) MTEditableMathLabel* label;
 
 @end
 
@@ -124,7 +124,7 @@ static NSInteger getCaretHeight() {
     CGFloat _scale;
 }
 
-- (id)initWithEditor:(MTEditableMathUILabel*)label
+- (id)initWithEditor:(MTEditableMathLabel*)label
 {
     self = [super initWithFrame:CGRectZero];
     if (self) {

@@ -11,18 +11,18 @@
 #import <UIKit/UIKit.h>
 #import "MTMathList.h"
 
-@class MTEditableMathUILabel;
+@class MTEditableMathLabel;
 @class MTMathListIndex;
 
 @protocol MTEditableMathUILabelDelegate <NSObject>
 
 // Called when the return key is pressed
-- (void) returnPressed:(MTEditableMathUILabel*) label;
+- (void) returnPressed:(MTEditableMathLabel*) label;
 // called when any text is modified
-- (void) textModified:(MTEditableMathUILabel*) label;
+- (void) textModified:(MTEditableMathLabel*) label;
 
-- (void) didBeginEditing:(MTEditableMathUILabel*) label;
-- (void) didEndEditing:(MTEditableMathUILabel*) label;
+- (void) didBeginEditing:(MTEditableMathLabel*) label;
+- (void) didEndEditing:(MTEditableMathLabel*) label;
 
 @end
 
@@ -59,7 +59,7 @@
 @end
 
 
-@interface MTEditableMathUILabel : UIView<UIKeyInput>
+@interface MTEditableMathLabel : UIView<UIKeyInput>
 
 @property (nonatomic) MTMathList* mathList;
 @property (nonatomic) UIColor* highlightColor;

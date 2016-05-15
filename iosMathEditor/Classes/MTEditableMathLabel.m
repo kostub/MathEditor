@@ -10,7 +10,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#import "MTEditableMathUILabel.h"
+#import "MTEditableMathLabel.h"
 #import "MTMathList.h"
 #import "MTMathUILabel.h"
 #import "MTMathAtomFactory.h"
@@ -21,14 +21,14 @@
 #import "MTUnicode.h"
 #import "MTMathListBuilder.h"
 
-@interface MTEditableMathUILabel() <UIGestureRecognizerDelegate, UITextInput>
+@interface MTEditableMathLabel() <UIGestureRecognizerDelegate, UITextInput>
 
 @property (nonatomic) MTMathUILabel* label;
 @property (nonatomic) UITapGestureRecognizer* tapGestureRecognizer;
 
 @end
 
-@implementation MTEditableMathUILabel {
+@implementation MTEditableMathLabel {
     MTCaretView* _caretView;
     MTMathListIndex* _insertionIndex;
     CGAffineTransform _flipTransform;
@@ -316,7 +316,7 @@
         return;
     }    
     
-    [MTEditableMathUILabel clearPlaceholders:self.mathList];
+    [MTEditableMathLabel clearPlaceholders:self.mathList];
     MTMathAtom* atom = [self.mathList atomAtListIndex:_insertionIndex];
     if (atom.type == kMTMathAtomPlaceholder) {
         atom.nucleus = MTSymbolBlackSquare;
