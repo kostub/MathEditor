@@ -1,9 +1,9 @@
-target 'iosMathEditor_Example' do
-  pod 'iosMathEditor', :path => '../'
+target 'MathEditor_Example' do
+  pod 'MathEditor', :path => '../'
 end
-target 'iosMathEditor_Tests' do
-  pod 'iosMathEditor', :path => '../'
+target 'MathEditor_Tests' do
+  pod 'MathEditor', :path => '../'
 end
-target 'iosMathEditor' do
+target 'MathEditor' do
     pod 'iosMath'
 end

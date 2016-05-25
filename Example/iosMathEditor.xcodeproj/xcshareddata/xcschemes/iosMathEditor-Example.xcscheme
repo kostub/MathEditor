@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "iosMathEditor_Example.app"
-               BlueprintName = "iosMathEditor_Example"
+               BuildableName = "MathEditor_Example.app"
+               BlueprintName = "MathEditor_Example"
                ReferencedContainer = "container:iosMathEditor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "iosMathEditor_Tests.xctest"
-               BlueprintName = "iosMathEditor_Tests"
+               BuildableName = "MathEditor_Tests.xctest"
+               BlueprintName = "MathEditor_Tests"
                ReferencedContainer = "container:iosMathEditor.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "iosMathEditor_Example.app"
-            BlueprintName = "iosMathEditor_Example"
+            BuildableName = "MathEditor_Example.app"
+            BlueprintName = "MathEditor_Example"
             ReferencedContainer = "container:iosMathEditor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "iosMathEditor_Example.app"
-            BlueprintName = "iosMathEditor_Example"
+            BuildableName = "MathEditor_Example.app"
+            BlueprintName = "MathEditor_Example"
             ReferencedContainer = "container:iosMathEditor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "iosMathEditor_Example.app"
-            BlueprintName = "iosMathEditor_Example"
+            BuildableName = "MathEditor_Example.app"
+            BlueprintName = "MathEditor_Example"
             ReferencedContainer = "container:iosMathEditor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

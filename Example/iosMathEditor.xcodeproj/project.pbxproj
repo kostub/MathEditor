@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1385A98064E559BF2F757304 /* libPods-MathEditor_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6761D7D7AC0EC9F0679C9 /* libPods-MathEditor_Example.a */; };
 		17AE64E96C2F76993532937F /* libPods-iosMathEditor_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 733BAF45E72F86EDFEAAAD61 /* libPods-iosMathEditor_Example.a */; };
+		2040F7C6A902C4AEF598B076 /* libPods-MathEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 473720D7C87DFE272F052861 /* libPods-MathEditor.a */; };
+		243FB02EE755A1D41861623B /* libPods-MathEditor_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 023479B03FDA39233191C9B7 /* libPods-MathEditor_Tests.a */; };
 		490BE5781CE6A08100AE31A0 /* MTDisplayEditingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5771CE6A08100AE31A0 /* MTDisplayEditingTest.m */; };
 		49DEC8241CF5523E000053CD /* MTCaretView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC81F1CF5523E000053CD /* MTCaretView.m */; };
 		49DEC8251CF5523E000053CD /* MTDisplay+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8211CF5523E000053CD /* MTDisplay+Editing.m */; };
@@ -46,9 +49,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		023479B03FDA39233191C9B7 /* libPods-MathEditor_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathEditor_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D14643E1EDE3F6786E897E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1377C04C01CE56EB11AB5A1B /* Pods-MathEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor/Pods-MathEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		402EE3804CD37332D1A68C6D /* Pods-iosMathEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Tests/Pods-iosMathEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		490BE5561CE695CC00AE31A0 /* libiosMathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiosMathEditor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		473720D7C87DFE272F052861 /* libPods-MathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		490BE5561CE695CC00AE31A0 /* libMathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMathEditor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		490BE5771CE6A08100AE31A0 /* MTDisplayEditingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDisplayEditingTest.m; sourceTree = "<group>"; };
 		49DEC81E1CF5523E000053CD /* MTCaretView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCaretView.h; sourceTree = "<group>"; };
 		49DEC81F1CF5523E000053CD /* MTCaretView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCaretView.m; sourceTree = "<group>"; };
@@ -73,8 +79,9 @@
 		49DEC83C1CF5591D000053CD /* NewKeyboardAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NewKeyboardAssets.xcassets; sourceTree = "<group>"; };
 		49DEC83D1CF5591D000053CD /* WhiteBGKeyboardTab.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WhiteBGKeyboardTab.xcassets; sourceTree = "<group>"; };
 		49DEC83E1CF57D75000053CD /* lmroman10-bolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lmroman10-bolditalic.otf"; sourceTree = "<group>"; };
+		49DEC83F1CF59F82000053CD /* MathEditor.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = MathEditor.podspec; path = ../MathEditor.podspec; sourceTree = "<group>"; };
 		5628D2459CDCF8D3064ABC73 /* libPods-iosMathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* iosMathEditor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosMathEditor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* MathEditor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathEditor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -87,7 +94,7 @@
 		6003F5A5195388D20070C39A /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* iosMathEditor_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosMathEditor_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* MathEditor_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathEditor_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -95,13 +102,18 @@
 		7089E03FE6D7B0392568F774 /* Pods-iosMathEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor/Pods-iosMathEditor.release.xcconfig"; sourceTree = "<group>"; };
 		733BAF45E72F86EDFEAAAD61 /* libPods-iosMathEditor_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathEditor_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		753F7D8158AE6B036B248A96 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7A378091F23FA26A8EEA2F82 /* Pods-MathEditor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor_Example/Pods-MathEditor_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		88415761C8C7BDA957E7932A /* Pods-iosMathEditor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Example/Pods-iosMathEditor_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8A93C35286D2F42BBFFF6281 /* Pods-MathEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor/Pods-MathEditor.release.xcconfig"; sourceTree = "<group>"; };
 		8C2C2D5F67432ABA1610E9B2 /* Pods-iosMathEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor/Pods-iosMathEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		8FF6761D7D7AC0EC9F0679C9 /* libPods-MathEditor_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathEditor_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EC35D984BA58883006D2C3 /* Pods-MathEditor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor_Tests/Pods-MathEditor_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AA22ED6294D4E5576093F8A8 /* Pods-MathEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor_Tests/Pods-MathEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA5AA8AF2C91D3A7B9B05F9 /* libPods-iosMathEditor_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathEditor_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FF5A2B2EBC4910F6080020 /* Pods-iosMathEditor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Tests/Pods-iosMathEditor_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C22335FDD0B9F56B94B8187A /* Pods-MathEditor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor_Example/Pods-MathEditor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF414D5B7EBC72A78642AEE /* Pods-iosMathEditor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Example/Pods-iosMathEditor_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FAD04FC27E845EB28C6BDCE9 /* iosMathEditor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iosMathEditor.podspec; path = ../iosMathEditor.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7002A80657E6131DE8E4E3D5 /* libPods-iosMathEditor.a in Frameworks */,
+				2040F7C6A902C4AEF598B076 /* libPods-MathEditor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +134,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				17AE64E96C2F76993532937F /* libPods-iosMathEditor_Example.a in Frameworks */,
+				1385A98064E559BF2F757304 /* libPods-MathEditor_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +146,7 @@
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
 				EFEFEBDB2978C33E43C6243A /* libPods-iosMathEditor_Tests.a in Frameworks */,
+				243FB02EE755A1D41861623B /* libPods-MathEditor_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +228,12 @@
 				B0FF5A2B2EBC4910F6080020 /* Pods-iosMathEditor_Tests.release.xcconfig */,
 				8C2C2D5F67432ABA1610E9B2 /* Pods-iosMathEditor.debug.xcconfig */,
 				7089E03FE6D7B0392568F774 /* Pods-iosMathEditor.release.xcconfig */,
+				1377C04C01CE56EB11AB5A1B /* Pods-MathEditor.debug.xcconfig */,
+				8A93C35286D2F42BBFFF6281 /* Pods-MathEditor.release.xcconfig */,
+				C22335FDD0B9F56B94B8187A /* Pods-MathEditor_Example.debug.xcconfig */,
+				7A378091F23FA26A8EEA2F82 /* Pods-MathEditor_Example.release.xcconfig */,
+				AA22ED6294D4E5576093F8A8 /* Pods-MathEditor_Tests.debug.xcconfig */,
+				A4EC35D984BA58883006D2C3 /* Pods-MathEditor_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -233,9 +254,9 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* iosMathEditor_Example.app */,
-				6003F5AE195388D20070C39A /* iosMathEditor_Tests.xctest */,
-				490BE5561CE695CC00AE31A0 /* libiosMathEditor.a */,
+				6003F58A195388D20070C39A /* MathEditor_Example.app */,
+				6003F5AE195388D20070C39A /* MathEditor_Tests.xctest */,
+				490BE5561CE695CC00AE31A0 /* libMathEditor.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,6 +271,9 @@
 				5628D2459CDCF8D3064ABC73 /* libPods-iosMathEditor.a */,
 				733BAF45E72F86EDFEAAAD61 /* libPods-iosMathEditor_Example.a */,
 				AEA5AA8AF2C91D3A7B9B05F9 /* libPods-iosMathEditor_Tests.a */,
+				473720D7C87DFE272F052861 /* libPods-MathEditor.a */,
+				8FF6761D7D7AC0EC9F0679C9 /* libPods-MathEditor_Example.a */,
+				023479B03FDA39233191C9B7 /* libPods-MathEditor_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -302,7 +326,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				FAD04FC27E845EB28C6BDCE9 /* iosMathEditor.podspec */,
+				49DEC83F1CF59F82000053CD /* MathEditor.podspec */,
 				09D14643E1EDE3F6786E897E /* README.md */,
 				753F7D8158AE6B036B248A96 /* LICENSE */,
 			);
@@ -312,9 +336,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		490BE5551CE695CC00AE31A0 /* iosMathEditor */ = {
+		490BE5551CE695CC00AE31A0 /* MathEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 490BE55E1CE695CC00AE31A0 /* Build configuration list for PBXNativeTarget "iosMathEditor" */;
+			buildConfigurationList = 490BE55E1CE695CC00AE31A0 /* Build configuration list for PBXNativeTarget "MathEditor" */;
 			buildPhases = (
 				48A9CBFCAB5894F9BFC552E4 /* 📦 Check Pods Manifest.lock */,
 				490BE5521CE695CC00AE31A0 /* Sources */,
@@ -326,14 +350,14 @@
 			);
 			dependencies = (
 			);
-			name = iosMathEditor;
+			name = MathEditor;
 			productName = iosMathEditor;
-			productReference = 490BE5561CE695CC00AE31A0 /* libiosMathEditor.a */;
+			productReference = 490BE5561CE695CC00AE31A0 /* libMathEditor.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		6003F589195388D20070C39A /* iosMathEditor_Example */ = {
+		6003F589195388D20070C39A /* MathEditor_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "iosMathEditor_Example" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MathEditor_Example" */;
 			buildPhases = (
 				A3E2D0D1A985C3FEA5864005 /* 📦 Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
@@ -346,14 +370,14 @@
 			);
 			dependencies = (
 			);
-			name = iosMathEditor_Example;
+			name = MathEditor_Example;
 			productName = iosMathEditor;
-			productReference = 6003F58A195388D20070C39A /* iosMathEditor_Example.app */;
+			productReference = 6003F58A195388D20070C39A /* MathEditor_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* iosMathEditor_Tests */ = {
+		6003F5AD195388D20070C39A /* MathEditor_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "iosMathEditor_Tests" */;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MathEditor_Tests" */;
 			buildPhases = (
 				4B44B263AD3BCE039EE8DD71 /* 📦 Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
@@ -366,9 +390,9 @@
 			);
 			dependencies = (
 			);
-			name = iosMathEditor_Tests;
+			name = MathEditor_Tests;
 			productName = iosMathEditorTests;
-			productReference = 6003F5AE195388D20070C39A /* iosMathEditor_Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* MathEditor_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -399,9 +423,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* iosMathEditor_Example */,
-				6003F5AD195388D20070C39A /* iosMathEditor_Tests */,
-				490BE5551CE695CC00AE31A0 /* iosMathEditor */,
+				6003F589195388D20070C39A /* MathEditor_Example */,
+				6003F5AD195388D20070C39A /* MathEditor_Tests */,
+				490BE5551CE695CC00AE31A0 /* MathEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -440,7 +464,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosMathEditor_Tests/Pods-iosMathEditor_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathEditor_Tests/Pods-MathEditor_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		48A9CBFCAB5894F9BFC552E4 /* 📦 Check Pods Manifest.lock */ = {
@@ -485,7 +509,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosMathEditor/Pods-iosMathEditor-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathEditor/Pods-MathEditor-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A3E2D0D1A985C3FEA5864005 /* 📦 Check Pods Manifest.lock */ = {
@@ -515,7 +539,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosMathEditor_Example/Pods-iosMathEditor_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathEditor_Example/Pods-MathEditor_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E202BD0EA2A01E97CAF04F2E /* 📦 Copy Pods Resources */ = {
@@ -530,7 +554,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosMathEditor_Example/Pods-iosMathEditor_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathEditor_Example/Pods-MathEditor_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E5084554A0ECA0F3755B8CC7 /* 📦 Embed Pods Frameworks */ = {
@@ -545,7 +569,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosMathEditor_Tests/Pods-iosMathEditor_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathEditor_Tests/Pods-MathEditor_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -607,7 +631,7 @@
 /* Begin XCBuildConfiguration section */
 		490BE55C1CE695CC00AE31A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C2C2D5F67432ABA1610E9B2 /* Pods-iosMathEditor.debug.xcconfig */;
+			baseConfigurationReference = 1377C04C01CE56EB11AB5A1B /* Pods-MathEditor.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -626,7 +650,7 @@
 		};
 		490BE55D1CE695CC00AE31A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7089E03FE6D7B0392568F774 /* Pods-iosMathEditor.release.xcconfig */;
+			baseConfigurationReference = 8A93C35286D2F42BBFFF6281 /* Pods-MathEditor.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COPY_PHASE_STRIP = NO;
@@ -719,7 +743,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88415761C8C7BDA957E7932A /* Pods-iosMathEditor_Example.debug.xcconfig */;
+			baseConfigurationReference = C22335FDD0B9F56B94B8187A /* Pods-MathEditor_Example.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosMathEditor/iosMathEditor-Prefix.pch";
@@ -732,7 +756,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF414D5B7EBC72A78642AEE /* Pods-iosMathEditor_Example.release.xcconfig */;
+			baseConfigurationReference = 7A378091F23FA26A8EEA2F82 /* Pods-MathEditor_Example.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosMathEditor/iosMathEditor-Prefix.pch";
@@ -745,7 +769,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 402EE3804CD37332D1A68C6D /* Pods-iosMathEditor_Tests.debug.xcconfig */;
+			baseConfigurationReference = AA22ED6294D4E5576093F8A8 /* Pods-MathEditor_Tests.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
@@ -762,7 +786,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0FF5A2B2EBC4910F6080020 /* Pods-iosMathEditor_Tests.release.xcconfig */;
+			baseConfigurationReference = A4EC35D984BA58883006D2C3 /* Pods-MathEditor_Tests.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
@@ -776,7 +800,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		490BE55E1CE695CC00AE31A0 /* Build configuration list for PBXNativeTarget "iosMathEditor" */ = {
+		490BE55E1CE695CC00AE31A0 /* Build configuration list for PBXNativeTarget "MathEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				490BE55C1CE695CC00AE31A0 /* Debug */,
@@ -794,7 +818,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "iosMathEditor_Example" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MathEditor_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
@@ -803,7 +827,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "iosMathEditor_Tests" */ = {
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MathEditor_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
