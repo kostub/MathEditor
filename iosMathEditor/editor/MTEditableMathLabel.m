@@ -126,6 +126,8 @@
 {
     self.label.fontSize = fontSize;
     _caretView.fontSize = fontSize;
+    // Update the cursor position when the font size changes.
+    [self insertionPointChanged];
 }
 
 - (CGFloat)fontSize

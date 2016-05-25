@@ -63,21 +63,12 @@
 
     // Shrink the font as the label gets longer.
     if (mathSize.width > label.frame.size.width - 10) {
-        [label layoutIfNeeded];
-        // animate
-        [UIView animateWithDuration:0.5 animations:^{
-            label.fontSize = label.fontSize * 0.9;
-            [label layoutIfNeeded];
-        }];
+        label.fontSize = label.fontSize * 0.9;
+
     } else if (mathSize.width < label.frame.size.width - 40) {
         CGFloat fontSize = MIN(label.fontSize * 1.1, 30);
         if (fontSize > label.fontSize) {
-            [label layoutIfNeeded];
-            // animate
-            [UIView animateWithDuration:0.5 animations:^{
-                label.fontSize = fontSize;
-                [label layoutIfNeeded];
-            }];
+            label.fontSize = fontSize;
         }
     }
 }
