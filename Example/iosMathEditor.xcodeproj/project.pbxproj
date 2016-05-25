@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1385A98064E559BF2F757304 /* libPods-MathEditor_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6761D7D7AC0EC9F0679C9 /* libPods-MathEditor_Example.a */; };
-		17AE64E96C2F76993532937F /* libPods-iosMathEditor_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 733BAF45E72F86EDFEAAAD61 /* libPods-iosMathEditor_Example.a */; };
 		2040F7C6A902C4AEF598B076 /* libPods-MathEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 473720D7C87DFE272F052861 /* libPods-MathEditor.a */; };
 		243FB02EE755A1D41861623B /* libPods-MathEditor_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 023479B03FDA39233191C9B7 /* libPods-MathEditor_Tests.a */; };
 		490BE5781CE6A08100AE31A0 /* MTDisplayEditingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5771CE6A08100AE31A0 /* MTDisplayEditingTest.m */; };
@@ -31,9 +30,7 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		7002A80657E6131DE8E4E3D5 /* libPods-iosMathEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5628D2459CDCF8D3064ABC73 /* libPods-iosMathEditor.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		EFEFEBDB2978C33E43C6243A /* libPods-iosMathEditor_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA5AA8AF2C91D3A7B9B05F9 /* libPods-iosMathEditor_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,7 +49,6 @@
 		023479B03FDA39233191C9B7 /* libPods-MathEditor_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathEditor_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D14643E1EDE3F6786E897E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1377C04C01CE56EB11AB5A1B /* Pods-MathEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor/Pods-MathEditor.debug.xcconfig"; sourceTree = "<group>"; };
-		402EE3804CD37332D1A68C6D /* Pods-iosMathEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Tests/Pods-iosMathEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		473720D7C87DFE272F052861 /* libPods-MathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		490BE5561CE695CC00AE31A0 /* libMathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMathEditor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		490BE5771CE6A08100AE31A0 /* MTDisplayEditingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDisplayEditingTest.m; sourceTree = "<group>"; };
@@ -99,21 +95,16 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		7089E03FE6D7B0392568F774 /* Pods-iosMathEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor/Pods-iosMathEditor.release.xcconfig"; sourceTree = "<group>"; };
 		733BAF45E72F86EDFEAAAD61 /* libPods-iosMathEditor_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathEditor_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		753F7D8158AE6B036B248A96 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7A378091F23FA26A8EEA2F82 /* Pods-MathEditor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor_Example/Pods-MathEditor_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		88415761C8C7BDA957E7932A /* Pods-iosMathEditor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Example/Pods-iosMathEditor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8A93C35286D2F42BBFFF6281 /* Pods-MathEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor/Pods-MathEditor.release.xcconfig"; sourceTree = "<group>"; };
-		8C2C2D5F67432ABA1610E9B2 /* Pods-iosMathEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor/Pods-iosMathEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		8FF6761D7D7AC0EC9F0679C9 /* libPods-MathEditor_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathEditor_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC35D984BA58883006D2C3 /* Pods-MathEditor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor_Tests/Pods-MathEditor_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AA22ED6294D4E5576093F8A8 /* Pods-MathEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor_Tests/Pods-MathEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA5AA8AF2C91D3A7B9B05F9 /* libPods-iosMathEditor_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathEditor_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0FF5A2B2EBC4910F6080020 /* Pods-iosMathEditor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Tests/Pods-iosMathEditor_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C22335FDD0B9F56B94B8187A /* Pods-MathEditor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathEditor_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathEditor_Example/Pods-MathEditor_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EEF414D5B7EBC72A78642AEE /* Pods-iosMathEditor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Example/Pods-iosMathEditor_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7002A80657E6131DE8E4E3D5 /* libPods-iosMathEditor.a in Frameworks */,
 				2040F7C6A902C4AEF598B076 /* libPods-MathEditor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +123,6 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				17AE64E96C2F76993532937F /* libPods-iosMathEditor_Example.a in Frameworks */,
 				1385A98064E559BF2F757304 /* libPods-MathEditor_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +134,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				EFEFEBDB2978C33E43C6243A /* libPods-iosMathEditor_Tests.a in Frameworks */,
 				243FB02EE755A1D41861623B /* libPods-MathEditor_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,12 +210,6 @@
 		4D5F9F41E950A502FB2B3BEA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				88415761C8C7BDA957E7932A /* Pods-iosMathEditor_Example.debug.xcconfig */,
-				EEF414D5B7EBC72A78642AEE /* Pods-iosMathEditor_Example.release.xcconfig */,
-				402EE3804CD37332D1A68C6D /* Pods-iosMathEditor_Tests.debug.xcconfig */,
-				B0FF5A2B2EBC4910F6080020 /* Pods-iosMathEditor_Tests.release.xcconfig */,
-				8C2C2D5F67432ABA1610E9B2 /* Pods-iosMathEditor.debug.xcconfig */,
-				7089E03FE6D7B0392568F774 /* Pods-iosMathEditor.release.xcconfig */,
 				1377C04C01CE56EB11AB5A1B /* Pods-MathEditor.debug.xcconfig */,
 				8A93C35286D2F42BBFFF6281 /* Pods-MathEditor.release.xcconfig */,
 				C22335FDD0B9F56B94B8187A /* Pods-MathEditor_Example.debug.xcconfig */,
