@@ -46,7 +46,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 // Gets the math keyboard resources bundle
 +(NSBundle *)getMathKeyboardResourcesBundle
 {
-    return [NSBundle bundleForClass:[self class]];
+    return [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"MTKeyboardResources" withExtension:@"bundle"]];
 }
 
 -(void)awakeFromNib

@@ -16,8 +16,26 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4P-nH-Xa2" customClass="MTEditableMathLabel">
+                                <rect key="frame" x="20" y="84" width="560" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="BiY-r6-E8l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="E4P-nH-Xa2" secondAttribute="trailing" constant="20" id="0Of-MG-kAp"/>
+                            <constraint firstItem="E4P-nH-Xa2" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="2g2-Z2-abR"/>
+                            <constraint firstItem="E4P-nH-Xa2" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="64" id="Tqr-eY-YYf"/>
+                            <constraint firstItem="E4P-nH-Xa2" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="uSf-XF-Dbu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mathLabel" destination="E4P-nH-Xa2" id="iBa-K5-SRT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

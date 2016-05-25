@@ -27,6 +27,9 @@
 
 + (MTMathKeyboardRootView *)sharedInstance;
 
+/// The keyboard resources bundle.
++ (NSBundle *)getMathKeyboardResourcesBundle;
+
 #pragma mark - MTMathKeyboardTraits
 
 @property (nonatomic) BOOL equalsAllowed;

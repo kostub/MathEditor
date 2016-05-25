@@ -11,6 +11,10 @@
 
 @import UIKit;
 
+#import "MTEditableMathLabel.h"
+
 @interface MTViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet MTEditableMathLabel *mathLabel;
 
 @end

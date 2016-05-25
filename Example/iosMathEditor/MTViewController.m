@@ -10,6 +10,7 @@
 //
 
 #import "MTViewController.h"
+#import "MTMathKeyboardRootView.h"
 
 @interface MTViewController ()
 
@@ -20,7 +21,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.mathLabel.layer.borderColor = [UIColor blackColor].CGColor;
+    self.mathLabel.layer.borderWidth = 2;
+    self.mathLabel.layer.cornerRadius = 5;
+    self.mathLabel.keyboard = [MTMathKeyboardRootView sharedInstance];
 }
 
 - (void)didReceiveMemoryWarning

@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'iosMathEditor/**/*'
   
   s.resource_bundles = {
-     'iosMathEditor' => ['iosMathEditor/MathKeyboardResources']
+     'MTKeyboardResources' => 'MathKeyboardResources/**/*'
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
