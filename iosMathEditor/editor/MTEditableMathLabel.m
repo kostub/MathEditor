@@ -71,9 +71,6 @@
     [self addGestureRecognizer:self.tapGestureRecognizer];
     self.tapGestureRecognizer.delegate = self;
     
-    _caretView = [[MTCaretView alloc] initWithEditor:self];
-    _caretView.caretColor = [UIColor colorWithWhite:0.1 alpha:1.0];
-    
     // Create our text storage.
     
     self.mathList =  [MTMathList new];
@@ -92,6 +89,9 @@
     self.label = label;
     CGAffineTransform transform = CGAffineTransformMakeTranslation(0, self.bounds.size.height);
     _flipTransform = CGAffineTransformConcat(CGAffineTransformMakeScale(1.0, -1.0), transform);
+
+    _caretView = [[MTCaretView alloc] initWithEditor:self];
+    _caretView.caretColor = [UIColor colorWithWhite:0.1 alpha:1.0];
 
     _indicesToHighlight = [NSMutableArray array];
     _highlightColor = [UIColor colorWithRed:0.8 green:0 blue:0.0 alpha:1.0];

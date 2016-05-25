@@ -34,6 +34,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="labelHeight" destination="BiY-r6-E8l" id="Mpj-nS-ghc"/>
                         <outlet property="mathLabel" destination="E4P-nH-Xa2" id="iBa-K5-SRT"/>
                     </connections>
                 </viewController>

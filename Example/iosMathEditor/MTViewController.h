@@ -16,5 +16,6 @@
 @interface MTViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet MTEditableMathLabel *mathLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *labelHeight;
 
 @end

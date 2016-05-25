@@ -37,4 +37,48 @@
 
 #pragma mark MTEditableMathLabelDelegate
 
+- (void)textModified:(MTEditableMathLabel *)label
+{
+    CGFloat minHeight = 64;
+    // Increase the height of the label as the height increases.
+    CGSize mathSize = label.mathDisplaySize;
+    if (mathSize.height > self.labelHeight.constant - 10) {
+        [label layoutIfNeeded];
+        // animate
+        [UIView animateWithDuration:0.5 animations:^{
+            self.labelHeight.constant = mathSize.height + 10;
+            [label layoutIfNeeded];
+        }];
+    } else if (mathSize.height < self.labelHeight.constant - 20) {
+        CGFloat newHeight = MAX(mathSize.height + 10, minHeight);
+        if (newHeight < self.labelHeight.constant) {
+            [label layoutIfNeeded];
+            // animate
+            [UIView animateWithDuration:0.5 animations:^{
+                self.labelHeight.constant = newHeight;
+                [label layoutIfNeeded];
+            }];
+        }
+    }
+
+    // Shrink the font as the label gets longer.
+    if (mathSize.width > label.frame.size.width - 10) {
+        [label layoutIfNeeded];
+        // animate
+        [UIView animateWithDuration:0.5 animations:^{
+            label.fontSize = label.fontSize * 0.9;
+            [label layoutIfNeeded];
+        }];
+    } else if (mathSize.width < label.frame.size.width - 40) {
+        CGFloat fontSize = MIN(label.fontSize * 1.1, 30);
+        if (fontSize > label.fontSize) {
+            [label layoutIfNeeded];
+            // animate
+            [UIView animateWithDuration:0.5 animations:^{
+                label.fontSize = fontSize;
+                [label layoutIfNeeded];
+            }];
+        }
+    }
+}
 @end
