@@ -14,7 +14,7 @@ typesetting rules.
   s.source           = { :git => "https://github.com/kostub/MathEditor.git", :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'iosMathEditor/**/*'
-  s.private_header_files = 'iosMathEditor/internal/**/*'
+  s.private_header_files = 'iosMathEditor/internal/**/*.h'
   s.resource_bundles = {
      'MTKeyboardResources' => 'MathKeyboardResources/**/*'
   }
