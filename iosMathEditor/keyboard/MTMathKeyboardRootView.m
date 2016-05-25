@@ -20,9 +20,8 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 @property (nonatomic) MTKeyboard *tab2Keyboard;
 @property (nonatomic) MTKeyboard *tab3Keyboard;
 @property (nonatomic) MTKeyboard *tab4Keyboard;
-@property (nonatomic, weak) MTEditableMathLabel *textView;
 @property (nonatomic) NSInteger currentTab;
-@property (nonatomic) NSArray *keyboards;
+@property (nonatomic) NSArray<MTKeyboard*> *keyboards;
 
 @end
 
@@ -47,7 +46,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 // Gets the math keyboard resources bundle
 +(NSBundle *)getMathKeyboardResourcesBundle
 {
-    return [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"MathKeyboardResources" withExtension:@"bundle"]];
+    return [NSBundle bundleForClass:[self class]];
 }
 
 -(void)awakeFromNib
@@ -65,7 +64,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
     _currentTab = -1;
 
     for (MTKeyboard *keyboard in _keyboards) {
-        // TODO: [DisplayUtils addFullSizeView:keyboard to:_contentView];
+        [self addFullSizeView:keyboard to:_contentView];
     }
 
     [self switchKeyboard:DEFAULT_KEYBOARD];
@@ -75,15 +74,6 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 -(void)switchToDefaultTab
 {
     [self switchKeyboard:DEFAULT_KEYBOARD];
-}
-
-- (void)setEditableMathLabel:(MTEditableMathLabel *)textView
-{
-    _textView = textView;
-    _tab1Keyboard.textView = textView;
-    _tab2Keyboard.textView = textView;
-    _tab3Keyboard.textView = textView;
-    _tab4Keyboard.textView = textView;
 }
 
 - (IBAction)switchTabs:(UIButton *)sender
@@ -148,12 +138,91 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
     _currentKeyboard = newKeyboard;
 }
 
-/*-(void)setKeyboardContext:(KeyboardContext *)context
+- (void)addFullSizeView:(UIView *)view to:(UIView*) parent
 {
-    [_tab1Keyboard setKeyboardContext:context];
-    [_tab2Keyboard setKeyboardContext:context];
-    [_tab3Keyboard setKeyboardContext:context];
-    [_tab4Keyboard setKeyboardContext:context];
-}*/
+    view.translatesAutoresizingMaskIntoConstraints = NO;
+    NSDictionary *views = NSDictionaryOfVariableBindings(view);
+    [parent addSubview:view];
+    [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|"
+                                                                   options:0
+                                                                   metrics:nil
+                                                                     views:views]];
+    [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|"
+                                                                   options:0
+                                                                   metrics:nil
+                                                                     views:views]];
+}
+
+#pragma mark - MTMathKeyboardTraits
+
+- (void)setEqualsAllowed:(BOOL)equalsAllowed
+{
+    _equalsAllowed = equalsAllowed;
+    for (MTKeyboard *keyboard in _keyboards) {
+        [keyboard setEqualsState:equalsAllowed];
+    }
+}
+
+- (void)setNumbersAllowed:(BOOL)numbersAllowed
+{
+    _numbersAllowed = numbersAllowed;
+    for (MTKeyboard *keyboard in _keyboards) {
+        [keyboard setNumbersState:numbersAllowed];
+    }
+}
+
+- (void)setOperatorsAllowed:(BOOL)operatorsAllowed
+{
+    _operatorsAllowed = operatorsAllowed;
+    for (MTKeyboard *keyboard in _keyboards) {
+        [keyboard setOperatorState:operatorsAllowed];
+    }
+}
+
+- (void)setVariablesAllowed:(BOOL)variablesAllowed
+{
+    _variablesAllowed = variablesAllowed;
+    for (MTKeyboard *keyboard in _keyboards) {
+        [keyboard setVariablesState:variablesAllowed];
+    }
+}
+
+- (void)setExponentHighlighted:(BOOL)exponentHighlighted
+{
+    _exponentHighlighted = exponentHighlighted;
+    for (MTKeyboard *keyboard in _keyboards) {
+        [keyboard setExponentState:exponentHighlighted];
+    }
+}
+
+- (void)setSquareRootHighlighted:(BOOL)squareRootHighlighted
+{
+    _squareRootHighlighted = squareRootHighlighted;
+        for (MTKeyboard *keyboard in _keyboards) {
+    [keyboard setSquareRootState:squareRootHighlighted];
+        }
+}
+
+- (void)setRadicalHighlighted:(BOOL)radicalHighlighted
+{
+    _radicalHighlighted = radicalHighlighted;
+    for (MTKeyboard *keyboard in _keyboards) {
+        [keyboard setRadicalState:radicalHighlighted];
+    }
+}
+
+- (void)startedEditing:(UIView<UIKeyInput> *)label
+{
+    for (MTKeyboard *keyboard in _keyboards) {
+        keyboard.textView = label;
+    }
+}
+
+- (void)finishedEditing:(UIView<UIKeyInput> *)label
+{
+    for (MTKeyboard *keyboard in _keyboards) {
+        keyboard.textView = nil;
+    }
+}
 
 @end

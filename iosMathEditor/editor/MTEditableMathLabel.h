@@ -53,8 +53,8 @@
  */
 @protocol MTMathKeyboard <MTMathKeyboardTraits>
 
-- (void) startedEditing:(id<UIKeyInput>) label;
-- (void) finishedEditing:(id<UIKeyInput>) label;
+- (void) startedEditing:(UIView<UIKeyInput>*) label;
+- (void) finishedEditing:(UIView<UIKeyInput>*) label;
 
 @end
 

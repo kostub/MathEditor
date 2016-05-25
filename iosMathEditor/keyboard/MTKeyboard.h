@@ -25,7 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *squareRootButton;
 @property (weak, nonatomic) IBOutlet UIButton *radicalButton;
 
-@property (nonatomic, weak) MTEditableMathLabel *textView;
+@property (nonatomic, weak) UIView<UIKeyInput>* textView;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *numbers;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *variables;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *operators;
@@ -53,5 +53,13 @@
 - (IBAction)squareRootPressed:(id)sender;
 - (IBAction)logWithBasePressed:(id)sender;
 
+- (void) setNumbersState:(BOOL)enabled;
+- (void) setOperatorState:(BOOL)enabled;
+- (void) setVariablesState:(BOOL)enabled;
+- (void) setFractionState:(BOOL)enabled;
+- (void) setEqualsState:(BOOL)enabled;
+- (void) setExponentState:(BOOL) highlighted;
+- (void) setSquareRootState:(BOOL) highlighted;
+- (void) setRadicalState:(BOOL) highlighted;
 
 @end

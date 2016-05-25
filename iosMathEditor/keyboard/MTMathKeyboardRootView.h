@@ -14,7 +14,7 @@
 #import "MTKeyboard.h"
 #import "MTEditableMathLabel.h"
 
-@interface MTMathKeyboardRootView : UIView
+@interface MTMathKeyboardRootView : UIView<MTMathKeyboard>
 
 - (IBAction)switchTabs:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
@@ -23,11 +23,19 @@
 @property (weak, nonatomic) IBOutlet UIButton *functionsTab;
 @property (weak, nonatomic) IBOutlet UIButton *operationsTab;
 
-- (void)switchToDefaultTab;
-//- (void) setKeyboardContext:(KeyboardContext*) context;
-- (void) setEditableMathLabel:(MTEditableMathLabel*) textView;
+- (void) switchToDefaultTab;
 
-+(MTMathKeyboardRootView *)sharedInstance;
++ (MTMathKeyboardRootView *)sharedInstance;
 
+#pragma mark - MTMathKeyboardTraits
+
+@property (nonatomic) BOOL equalsAllowed;
+@property (nonatomic) BOOL fractionsAllowed;
+@property (nonatomic) BOOL variablesAllowed;
+@property (nonatomic) BOOL numbersAllowed;
+@property (nonatomic) BOOL operatorsAllowed;
+@property (nonatomic) BOOL exponentHighlighted;
+@property (nonatomic) BOOL squareRootHighlighted;
+@property (nonatomic) BOOL radicalHighlighted;
 
 @end

@@ -72,6 +72,7 @@
 		49DEC83B1CF5591D000053CD /* MTMathKeyboardRootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTMathKeyboardRootView.xib; sourceTree = "<group>"; };
 		49DEC83C1CF5591D000053CD /* NewKeyboardAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NewKeyboardAssets.xcassets; sourceTree = "<group>"; };
 		49DEC83D1CF5591D000053CD /* WhiteBGKeyboardTab.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WhiteBGKeyboardTab.xcassets; sourceTree = "<group>"; };
+		49DEC83E1CF57D75000053CD /* lmroman10-bolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lmroman10-bolditalic.otf"; sourceTree = "<group>"; };
 		5628D2459CDCF8D3064ABC73 /* libPods-iosMathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* iosMathEditor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosMathEditor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -189,6 +190,7 @@
 		49DEC8351CF5591D000053CD /* MathKeyboardResources */ = {
 			isa = PBXGroup;
 			children = (
+				49DEC83E1CF57D75000053CD /* lmroman10-bolditalic.otf */,
 				49DEC8361CF5591D000053CD /* KeyboardAssests.xcassets */,
 				49DEC8371CF5591D000053CD /* MTKeyboard.xib */,
 				49DEC8381CF5591D000053CD /* MTKeyboardTab2.xib */,

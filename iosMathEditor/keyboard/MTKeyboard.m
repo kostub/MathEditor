@@ -248,17 +248,7 @@
     self.radicalButton.selected = highlighted;
 }
 
-/*- (void)setKeyboardContext:(KeyboardContext *)context
-{
-    [self setNumbersState:context.numbersAllowed];
-    [self setOperatorState:context.operatorsAllowed];
-    [self setVariablesState:context.variablesAllowed];
-    [self setFractionState:context.fractionsAllowed];
-    [self setEqualsState:context.equalsAllowed];
-    [self setExponentState:context.exponentHighlighted];
-    [self setSquareRootState:context.squareRootHighlighted];
-    [self setRadicalState:context.radicalHighlighted];
-}*/
+#pragma mark -
 
 // Prevent touches from being propagated to super view.
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
