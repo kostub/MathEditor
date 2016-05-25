@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		17AE64E96C2F76993532937F /* libPods-iosMathEditor_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 733BAF45E72F86EDFEAAAD61 /* libPods-iosMathEditor_Example.a */; };
-		490BE56F1CE6962400AE31A0 /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE55F1CE6962400AE31A0 /* MTMathListIndex.m */; };
-		490BE5701CE6962400AE31A0 /* MTMathList+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5611CE6962400AE31A0 /* MTMathList+Editing.m */; };
-		490BE5711CE6962400AE31A0 /* MTDisplay+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5631CE6962400AE31A0 /* MTDisplay+Editing.m */; };
-		490BE5751CE6962400AE31A0 /* MTEditableMathLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE56B1CE6962400AE31A0 /* MTEditableMathLabel.m */; };
-		490BE5761CE6962400AE31A0 /* MTCaretView.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE56D1CE6962400AE31A0 /* MTCaretView.m */; };
 		490BE5781CE6A08100AE31A0 /* MTDisplayEditingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BE5771CE6A08100AE31A0 /* MTDisplayEditingTest.m */; };
+		49DEC8241CF5523E000053CD /* MTCaretView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC81F1CF5523E000053CD /* MTCaretView.m */; };
+		49DEC8251CF5523E000053CD /* MTDisplay+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8211CF5523E000053CD /* MTDisplay+Editing.m */; };
+		49DEC8261CF5523E000053CD /* MTMathList+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8231CF5523E000053CD /* MTMathList+Editing.m */; };
+		49DEC82C1CF55265000053CD /* MTEditableMathLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8291CF55265000053CD /* MTEditableMathLabel.m */; };
+		49DEC82D1CF55265000053CD /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC82B1CF55265000053CD /* MTMathListIndex.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -31,16 +31,6 @@
 		EFEFEBDB2978C33E43C6243A /* libPods-iosMathEditor_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA5AA8AF2C91D3A7B9B05F9 /* libPods-iosMathEditor_Tests.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = iosMathEditor;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		490BE5541CE695CC00AE31A0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -57,17 +47,17 @@
 		09D14643E1EDE3F6786E897E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		402EE3804CD37332D1A68C6D /* Pods-iosMathEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathEditor_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathEditor_Tests/Pods-iosMathEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		490BE5561CE695CC00AE31A0 /* libiosMathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiosMathEditor.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		490BE55F1CE6962400AE31A0 /* MTMathListIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTMathListIndex.m; path = ../../iosMathEditor/Classes/MTMathListIndex.m; sourceTree = "<group>"; };
-		490BE5601CE6962400AE31A0 /* MTMathListIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTMathListIndex.h; path = ../../iosMathEditor/Classes/MTMathListIndex.h; sourceTree = "<group>"; };
-		490BE5611CE6962400AE31A0 /* MTMathList+Editing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MTMathList+Editing.m"; path = "../../iosMathEditor/Classes/MTMathList+Editing.m"; sourceTree = "<group>"; };
-		490BE5621CE6962400AE31A0 /* MTMathList+Editing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MTMathList+Editing.h"; path = "../../iosMathEditor/Classes/MTMathList+Editing.h"; sourceTree = "<group>"; };
-		490BE5631CE6962400AE31A0 /* MTDisplay+Editing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MTDisplay+Editing.m"; path = "../../iosMathEditor/Classes/MTDisplay+Editing.m"; sourceTree = "<group>"; };
-		490BE5641CE6962400AE31A0 /* MTDisplay+Editing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MTDisplay+Editing.h"; path = "../../iosMathEditor/Classes/MTDisplay+Editing.h"; sourceTree = "<group>"; };
-		490BE56B1CE6962400AE31A0 /* MTEditableMathLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTEditableMathLabel.m; path = ../../iosMathEditor/Classes/MTEditableMathLabel.m; sourceTree = "<group>"; };
-		490BE56C1CE6962400AE31A0 /* MTEditableMathLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTEditableMathLabel.h; path = ../../iosMathEditor/Classes/MTEditableMathLabel.h; sourceTree = "<group>"; };
-		490BE56D1CE6962400AE31A0 /* MTCaretView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTCaretView.m; path = ../../iosMathEditor/Classes/MTCaretView.m; sourceTree = "<group>"; };
-		490BE56E1CE6962400AE31A0 /* MTCaretView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTCaretView.h; path = ../../iosMathEditor/Classes/MTCaretView.h; sourceTree = "<group>"; };
 		490BE5771CE6A08100AE31A0 /* MTDisplayEditingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDisplayEditingTest.m; sourceTree = "<group>"; };
+		49DEC81E1CF5523E000053CD /* MTCaretView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCaretView.h; sourceTree = "<group>"; };
+		49DEC81F1CF5523E000053CD /* MTCaretView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCaretView.m; sourceTree = "<group>"; };
+		49DEC8201CF5523E000053CD /* MTDisplay+Editing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTDisplay+Editing.h"; sourceTree = "<group>"; };
+		49DEC8211CF5523E000053CD /* MTDisplay+Editing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTDisplay+Editing.m"; sourceTree = "<group>"; };
+		49DEC8221CF5523E000053CD /* MTMathList+Editing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTMathList+Editing.h"; sourceTree = "<group>"; };
+		49DEC8231CF5523E000053CD /* MTMathList+Editing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTMathList+Editing.m"; sourceTree = "<group>"; };
+		49DEC8281CF55265000053CD /* MTEditableMathLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTEditableMathLabel.h; sourceTree = "<group>"; };
+		49DEC8291CF55265000053CD /* MTEditableMathLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTEditableMathLabel.m; sourceTree = "<group>"; };
+		49DEC82A1CF55265000053CD /* MTMathListIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListIndex.h; sourceTree = "<group>"; };
+		49DEC82B1CF55265000053CD /* MTMathListIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListIndex.m; sourceTree = "<group>"; };
 		5628D2459CDCF8D3064ABC73 /* libPods-iosMathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* iosMathEditor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosMathEditor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,18 +126,36 @@
 		490BE5571CE695CC00AE31A0 /* iosMathEditor */ = {
 			isa = PBXGroup;
 			children = (
-				490BE55F1CE6962400AE31A0 /* MTMathListIndex.m */,
-				490BE5601CE6962400AE31A0 /* MTMathListIndex.h */,
-				490BE5611CE6962400AE31A0 /* MTMathList+Editing.m */,
-				490BE5621CE6962400AE31A0 /* MTMathList+Editing.h */,
-				490BE5631CE6962400AE31A0 /* MTDisplay+Editing.m */,
-				490BE5641CE6962400AE31A0 /* MTDisplay+Editing.h */,
-				490BE56B1CE6962400AE31A0 /* MTEditableMathLabel.m */,
-				490BE56C1CE6962400AE31A0 /* MTEditableMathLabel.h */,
-				490BE56D1CE6962400AE31A0 /* MTCaretView.m */,
-				490BE56E1CE6962400AE31A0 /* MTCaretView.h */,
+				49DEC8271CF55265000053CD /* editor */,
+				49DEC81D1CF5523E000053CD /* internal */,
 			);
 			path = iosMathEditor;
+			sourceTree = "<group>";
+		};
+		49DEC81D1CF5523E000053CD /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				49DEC81E1CF5523E000053CD /* MTCaretView.h */,
+				49DEC81F1CF5523E000053CD /* MTCaretView.m */,
+				49DEC8201CF5523E000053CD /* MTDisplay+Editing.h */,
+				49DEC8211CF5523E000053CD /* MTDisplay+Editing.m */,
+				49DEC8221CF5523E000053CD /* MTMathList+Editing.h */,
+				49DEC8231CF5523E000053CD /* MTMathList+Editing.m */,
+			);
+			name = internal;
+			path = ../../iosMathEditor/internal;
+			sourceTree = "<group>";
+		};
+		49DEC8271CF55265000053CD /* editor */ = {
+			isa = PBXGroup;
+			children = (
+				49DEC8281CF55265000053CD /* MTEditableMathLabel.h */,
+				49DEC8291CF55265000053CD /* MTEditableMathLabel.m */,
+				49DEC82A1CF55265000053CD /* MTMathListIndex.h */,
+				49DEC82B1CF55265000053CD /* MTMathListIndex.m */,
+			);
+			name = editor;
+			path = ../../iosMathEditor/editor;
 			sourceTree = "<group>";
 		};
 		4D5F9F41E950A502FB2B3BEA /* Pods */ = {
@@ -311,7 +319,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
 			name = iosMathEditor_Tests;
 			productName = iosMathEditorTests;
@@ -502,11 +509,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				490BE5711CE6962400AE31A0 /* MTDisplay+Editing.m in Sources */,
-				490BE5751CE6962400AE31A0 /* MTEditableMathLabel.m in Sources */,
-				490BE56F1CE6962400AE31A0 /* MTMathListIndex.m in Sources */,
-				490BE5701CE6962400AE31A0 /* MTMathList+Editing.m in Sources */,
-				490BE5761CE6962400AE31A0 /* MTCaretView.m in Sources */,
+				49DEC82D1CF55265000053CD /* MTMathListIndex.m in Sources */,
+				49DEC8251CF5523E000053CD /* MTDisplay+Editing.m in Sources */,
+				49DEC82C1CF55265000053CD /* MTEditableMathLabel.m in Sources */,
+				49DEC8241CF5523E000053CD /* MTCaretView.m in Sources */,
+				49DEC8261CF5523E000053CD /* MTMathList+Editing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,14 +536,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* iosMathEditor_Example */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
@@ -630,7 +629,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -663,7 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
