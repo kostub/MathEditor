@@ -1,9 +1,9 @@
-# iosMathEditor
+# MathEditor
 
-[![CI Status](http://img.shields.io/travis/kostub/iosMathEditor.svg?style=flat)](https://travis-ci.org/kostub/iosMathEditor)
-[![Version](https://img.shields.io/cocoapods/v/iosMathEditor.svg?style=flat)](http://cocoapods.org/pods/iosMathEditor)
-[![License](https://img.shields.io/cocoapods/l/iosMathEditor.svg?style=flat)](http://cocoapods.org/pods/iosMathEditor)
-[![Platform](https://img.shields.io/cocoapods/p/iosMathEditor.svg?style=flat)](http://cocoapods.org/pods/iosMathEditor)
+[![CI Status](http://img.shields.io/travis/kostub/MathEditor.svg?style=flat)](https://travis-ci.org/kostub/MathEditor)
+[![Version](https://img.shields.io/cocoapods/v/MathEditor.svg?style=flat)](http://cocoapods.org/pods/MathEditor)
+[![License](https://img.shields.io/cocoapods/l/MathEditor.svg?style=flat)](http://cocoapods.org/pods/MathEditor)
+[![Platform](https://img.shields.io/cocoapods/p/MathEditor.svg?style=flat)](http://cocoapods.org/pods/MathEditor)
 
 iosMathEditor provides a UIView where you can edit math. It builds upon
 [iosMath](http://github.com/kostub/iosMath)
