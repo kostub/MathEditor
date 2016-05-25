@@ -14,7 +14,10 @@
 @class MTEditableMathLabel;
 @class MTMathListIndex;
 
-@protocol MTEditableMathUILabelDelegate <NSObject>
+/** Delegate for the `MTEditableMathLabel`. All methods are optional. */
+@protocol MTEditableMathLabelDelegate <NSObject>
+
+@optional
 
 // Called when the return key is pressed
 - (void) returnPressed:(MTEditableMathLabel*) label;
@@ -65,7 +68,7 @@
 @property (nonatomic) UIColor* highlightColor;
 
 @property (nonatomic) UIImageView* cancelImage;
-@property (nonatomic, weak) id<MTEditableMathUILabelDelegate> delegate;
+@property (nonatomic, weak) id<MTEditableMathLabelDelegate> delegate;
 @property (nonatomic, weak) UIView<MTMathKeyboard>* keyboard;
 @property (nonatomic) CGFloat fontSize;
 @property (nonatomic) CGFloat paddingBottom;

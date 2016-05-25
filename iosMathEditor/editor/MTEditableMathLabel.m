@@ -185,7 +185,9 @@
         [self.keyboard startedEditing:self];
         
         [self insertionPointChanged];
-        [self.delegate didBeginEditing:self];
+        if ([self.delegate respondsToSelector:@selector(didBeginEditing:)]) {
+            [self.delegate didBeginEditing:self];
+        }
     } else {
         // Sometimes it takes some time
         // [self performSelector:@selector(startEditing) withObject:nil afterDelay:0.0];
@@ -204,7 +206,9 @@
         [self.keyboard finishedEditing:self];
          val = [super resignFirstResponder];
         [self insertionPointChanged];
-        [self.delegate didEndEditing:self];
+        if ([self.delegate respondsToSelector:@selector(didEndEditing:)]) {
+            [self.delegate didEndEditing:self];
+        }
     }
     return val;
 }
@@ -674,7 +678,10 @@
 - (void) insertText:(NSString*) str
 {
     if ([str isEqualToString:@"\n"]) {
-        return [self.delegate returnPressed:self];
+        if ([self.delegate respondsToSelector:@selector(returnPressed:)]) {
+            [self.delegate returnPressed:self];
+        }
+        return;
     }
 
     if (str.length == 0) {
@@ -738,7 +745,9 @@
         [self insertParens];
     }
 
-    [self.delegate textModified:self];
+    if ([self.delegate respondsToSelector:@selector(textModified:)]) {
+        [self.delegate textModified:self];
+    }
 }
 
 // Return YES if string is a trig function, otherwise return NO
@@ -807,7 +816,9 @@
         
         self.label.mathList = self.mathList;
         [self insertionPointChanged];
-        [self.delegate textModified:self];
+        if ([self.delegate respondsToSelector:@selector(textModified:)]) {
+            [self.delegate textModified:self];
+        }
     }
 }
 

@@ -12,7 +12,7 @@
 #import "MTViewController.h"
 #import "MTMathKeyboardRootView.h"
 
-@interface MTViewController ()
+@interface MTViewController () <MTEditableMathLabelDelegate>
 
 @end
 
@@ -25,6 +25,8 @@
     self.mathLabel.layer.borderWidth = 2;
     self.mathLabel.layer.cornerRadius = 5;
     self.mathLabel.keyboard = [MTMathKeyboardRootView sharedInstance];
+    self.mathLabel.delegate = self;
+    [self.mathLabel enableTap:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,5 +34,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark MTEditableMathLabelDelegate
 
 @end
