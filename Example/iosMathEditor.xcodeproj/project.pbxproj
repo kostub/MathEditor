@@ -725,7 +725,7 @@
 				GCC_PREFIX_HEADER = "iosMathEditor/iosMathEditor-Prefix.pch";
 				INFOPLIST_FILE = "iosMathEditor/iosMathEditor-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = MathChat.iosMathEditorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -739,7 +739,7 @@
 				GCC_PREFIX_HEADER = "iosMathEditor/iosMathEditor-Prefix.pch";
 				INFOPLIST_FILE = "iosMathEditor/iosMathEditor-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = MathChat.iosMathEditorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
