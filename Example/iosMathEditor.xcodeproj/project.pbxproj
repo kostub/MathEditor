@@ -14,6 +14,8 @@
 		49DEC8261CF5523E000053CD /* MTMathList+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8231CF5523E000053CD /* MTMathList+Editing.m */; };
 		49DEC82C1CF55265000053CD /* MTEditableMathLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8291CF55265000053CD /* MTEditableMathLabel.m */; };
 		49DEC82D1CF55265000053CD /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC82B1CF55265000053CD /* MTMathListIndex.m */; };
+		49DEC8331CF5588C000053CD /* MTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8301CF5588C000053CD /* MTKeyboard.m */; };
+		49DEC8341CF5588C000053CD /* MTMathKeyboardRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8321CF5588C000053CD /* MTMathKeyboardRootView.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -58,6 +60,18 @@
 		49DEC8291CF55265000053CD /* MTEditableMathLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTEditableMathLabel.m; sourceTree = "<group>"; };
 		49DEC82A1CF55265000053CD /* MTMathListIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListIndex.h; sourceTree = "<group>"; };
 		49DEC82B1CF55265000053CD /* MTMathListIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListIndex.m; sourceTree = "<group>"; };
+		49DEC82F1CF5588C000053CD /* MTKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKeyboard.h; sourceTree = "<group>"; };
+		49DEC8301CF5588C000053CD /* MTKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKeyboard.m; sourceTree = "<group>"; };
+		49DEC8311CF5588C000053CD /* MTMathKeyboardRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathKeyboardRootView.h; sourceTree = "<group>"; };
+		49DEC8321CF5588C000053CD /* MTMathKeyboardRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathKeyboardRootView.m; sourceTree = "<group>"; };
+		49DEC8361CF5591D000053CD /* KeyboardAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyboardAssests.xcassets; sourceTree = "<group>"; };
+		49DEC8371CF5591D000053CD /* MTKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTKeyboard.xib; sourceTree = "<group>"; };
+		49DEC8381CF5591D000053CD /* MTKeyboardTab2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTKeyboardTab2.xib; sourceTree = "<group>"; };
+		49DEC8391CF5591D000053CD /* MTKeyboardTab3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTKeyboardTab3.xib; sourceTree = "<group>"; };
+		49DEC83A1CF5591D000053CD /* MTKeyboardTab4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTKeyboardTab4.xib; sourceTree = "<group>"; };
+		49DEC83B1CF5591D000053CD /* MTMathKeyboardRootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTMathKeyboardRootView.xib; sourceTree = "<group>"; };
+		49DEC83C1CF5591D000053CD /* NewKeyboardAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NewKeyboardAssets.xcassets; sourceTree = "<group>"; };
+		49DEC83D1CF5591D000053CD /* WhiteBGKeyboardTab.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WhiteBGKeyboardTab.xcassets; sourceTree = "<group>"; };
 		5628D2459CDCF8D3064ABC73 /* libPods-iosMathEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* iosMathEditor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosMathEditor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,6 +140,8 @@
 		490BE5571CE695CC00AE31A0 /* iosMathEditor */ = {
 			isa = PBXGroup;
 			children = (
+				49DEC8351CF5591D000053CD /* MathKeyboardResources */,
+				49DEC82E1CF5588C000053CD /* keyboard */,
 				49DEC8271CF55265000053CD /* editor */,
 				49DEC81D1CF5523E000053CD /* internal */,
 			);
@@ -156,6 +172,34 @@
 			);
 			name = editor;
 			path = ../../iosMathEditor/editor;
+			sourceTree = "<group>";
+		};
+		49DEC82E1CF5588C000053CD /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				49DEC82F1CF5588C000053CD /* MTKeyboard.h */,
+				49DEC8301CF5588C000053CD /* MTKeyboard.m */,
+				49DEC8311CF5588C000053CD /* MTMathKeyboardRootView.h */,
+				49DEC8321CF5588C000053CD /* MTMathKeyboardRootView.m */,
+			);
+			name = keyboard;
+			path = ../../iosMathEditor/keyboard;
+			sourceTree = "<group>";
+		};
+		49DEC8351CF5591D000053CD /* MathKeyboardResources */ = {
+			isa = PBXGroup;
+			children = (
+				49DEC8361CF5591D000053CD /* KeyboardAssests.xcassets */,
+				49DEC8371CF5591D000053CD /* MTKeyboard.xib */,
+				49DEC8381CF5591D000053CD /* MTKeyboardTab2.xib */,
+				49DEC8391CF5591D000053CD /* MTKeyboardTab3.xib */,
+				49DEC83A1CF5591D000053CD /* MTKeyboardTab4.xib */,
+				49DEC83B1CF5591D000053CD /* MTMathKeyboardRootView.xib */,
+				49DEC83C1CF5591D000053CD /* NewKeyboardAssets.xcassets */,
+				49DEC83D1CF5591D000053CD /* WhiteBGKeyboardTab.xcassets */,
+			);
+			name = MathKeyboardResources;
+			path = ../../MathKeyboardResources;
 			sourceTree = "<group>";
 		};
 		4D5F9F41E950A502FB2B3BEA /* Pods */ = {
@@ -513,7 +557,9 @@
 				49DEC8251CF5523E000053CD /* MTDisplay+Editing.m in Sources */,
 				49DEC82C1CF55265000053CD /* MTEditableMathLabel.m in Sources */,
 				49DEC8241CF5523E000053CD /* MTCaretView.m in Sources */,
+				49DEC8331CF5588C000053CD /* MTKeyboard.m in Sources */,
 				49DEC8261CF5523E000053CD /* MTMathList+Editing.m in Sources */,
+				49DEC8341CF5588C000053CD /* MTMathKeyboardRootView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

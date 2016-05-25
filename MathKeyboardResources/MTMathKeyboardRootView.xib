@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB" customClass="MTMathKeyboardRootView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="CSI-WM-BTY" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="45" width="320" height="180"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPm-TR-9mx" userLabel="123">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+                    <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="Numbers Symbol wbg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Number Symbol"/>
+                    <connections>
+                        <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="Yd3-cq-B4b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-QV-XuP" userLabel="()&lt;&gt;">
+                    <rect key="frame" x="80" y="0.0" width="80" height="45"/>
+                    <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="Operations Symbol wbg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Operations Symbol"/>
+                    <connections>
+                        <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="T22-hh-CVr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nJ-5m-bi3" userLabel="f(x)">
+                    <rect key="frame" x="160" y="0.0" width="80" height="45"/>
+                    <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="Functions Symbol wbg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Functions Symbol"/>
+                    <connections>
+                        <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="MJC-ao-PXT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypu-KD-PWt" userLabel="abc">
+                    <rect key="frame" x="240" y="0.0" width="80" height="45"/>
+                    <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="Letter Symbol wbg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Letter Symbol"/>
+                    <connections>
+                        <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="YRu-qx-dt5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4cR-QV-XuP" firstAttribute="leading" secondItem="cPm-TR-9mx" secondAttribute="trailing" id="3ng-pk-sP9"/>
+                <constraint firstItem="CSI-WM-BTY" firstAttribute="top" secondItem="cPm-TR-9mx" secondAttribute="bottom" id="7w1-hf-WeK"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="width" secondItem="8nJ-5m-bi3" secondAttribute="width" id="8oh-xR-lq7"/>
+                <constraint firstItem="8nJ-5m-bi3" firstAttribute="height" secondItem="cPm-TR-9mx" secondAttribute="height" id="BJc-0G-gTJ"/>
+                <constraint firstItem="CSI-WM-BTY" firstAttribute="height" secondItem="cPm-TR-9mx" secondAttribute="height" multiplier="4" id="FMy-eq-IAA"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="width" secondItem="CSI-WM-BTY" secondAttribute="width" multiplier="0.25" id="GlW-gz-Veg"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="bottom" secondItem="8nJ-5m-bi3" secondAttribute="bottom" id="I9g-SP-SfH"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="width" secondItem="ypu-KD-PWt" secondAttribute="width" id="L9z-xW-Ixw"/>
+                <constraint firstItem="4cR-QV-XuP" firstAttribute="bottom" secondItem="cPm-TR-9mx" secondAttribute="bottom" id="Qxt-tm-Zf0"/>
+                <constraint firstAttribute="trailing" secondItem="CSI-WM-BTY" secondAttribute="trailing" id="WI6-EX-Umb"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XZN-yo-qXc"/>
+                <constraint firstItem="8nJ-5m-bi3" firstAttribute="leading" secondItem="4cR-QV-XuP" secondAttribute="trailing" id="Ydf-D2-HJE"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZtC-3I-KOu"/>
+                <constraint firstItem="CSI-WM-BTY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dpO-h5-Smw"/>
+                <constraint firstItem="4cR-QV-XuP" firstAttribute="top" secondItem="cPm-TR-9mx" secondAttribute="top" id="e6v-ff-Ten"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="width" secondItem="4cR-QV-XuP" secondAttribute="width" id="e9G-h1-GsE"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="top" secondItem="ypu-KD-PWt" secondAttribute="top" id="f9j-us-yLZ"/>
+                <constraint firstItem="ypu-KD-PWt" firstAttribute="height" secondItem="cPm-TR-9mx" secondAttribute="height" id="mj7-xQ-kDb"/>
+                <constraint firstItem="8nJ-5m-bi3" firstAttribute="top" secondItem="cPm-TR-9mx" secondAttribute="top" id="qQr-rt-gkf"/>
+                <constraint firstItem="cPm-TR-9mx" firstAttribute="height" secondItem="4cR-QV-XuP" secondAttribute="height" id="sE4-aW-8Us"/>
+                <constraint firstItem="ypu-KD-PWt" firstAttribute="bottom" secondItem="cPm-TR-9mx" secondAttribute="bottom" id="uiY-X1-TLG"/>
+                <constraint firstItem="8nJ-5m-bi3" firstAttribute="trailing" secondItem="ypu-KD-PWt" secondAttribute="leading" id="vOy-Jd-Rwi"/>
+                <constraint firstAttribute="bottom" secondItem="CSI-WM-BTY" secondAttribute="bottom" id="yLh-Be-6nT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="CSI-WM-BTY" id="k3f-C0-naz"/>
+                <outlet property="functionsTab" destination="8nJ-5m-bi3" id="Lcx-oO-LKG"/>
+                <outlet property="lettersTab" destination="ypu-KD-PWt" id="qQX-xA-mRF"/>
+                <outlet property="numbersTab" destination="cPm-TR-9mx" id="FUY-4f-cwj"/>
+                <outlet property="operationsTab" destination="4cR-QV-XuP" id="YcP-k7-h1L"/>
+            </connections>
+            <point key="canvasLocation" x="-126" y="398.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Functions Symbol" width="80" height="45"/>
+        <image name="Functions Symbol wbg" width="79" height="44"/>
+        <image name="Letter Symbol" width="80" height="45"/>
+        <image name="Letter Symbol wbg" width="79" height="44"/>
+        <image name="Number Symbol" width="80" height="45"/>
+        <image name="Numbers Symbol wbg" width="79" height="44"/>
+        <image name="Operations Symbol" width="80" height="45"/>
+        <image name="Operations Symbol wbg" width="79" height="44"/>
+    </resources>
+</document>

@@ -30,11 +30,11 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'iosMathEditor/Classes/**/*'
+  s.source_files = 'iosMathEditor/**/*'
   
-  # s.resource_bundles = {
-  #   'iosMathEditor' => ['iosMathEditor/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'iosMathEditor' => ['iosMathEditor/MathKeyboardResources']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
