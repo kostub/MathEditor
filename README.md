@@ -5,28 +5,38 @@
 [![License](https://img.shields.io/cocoapods/l/MathEditor.svg?style=flat)](http://cocoapods.org/pods/MathEditor)
 [![Platform](https://img.shields.io/cocoapods/p/MathEditor.svg?style=flat)](http://cocoapods.org/pods/MathEditor)
 
-iosMathEditor provides a UIView where you can edit math. It builds upon
+MathEditor provides a UIView where you can edit math. It builds upon
 [iosMath](http://github.com/kostub/iosMath)
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+There is a sample app included in this project that shows how to use the
+math editor as well as code for automatically resizing the editor as the
+text in it changes. To run the same app, clone the repository, and run
+`pod install` from the `Example` directory first. Then run the
+__MathEditor_Example__ app.
 
 ## Requirements
+`MathEditor` works on iOS 8+ and requires ARC to build. It depends on
+the following Cocoapod:
+
+* [iosMath](http://cocoapods.org/pods/iosMath)
+
+Additionaly, it depends on the following Apple frameworks:
+
+* Foundation.framework
+* UIKit.framework
 
 ## Installation
 
-iosMathEditor is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+`MathEditor` is available through [CocoaPods](http://cocoapods.org). To
+install it, simply add the following line to your Podfile:
 
 ```ruby
-pod "iosMathEditor"
+pod "MathEditor"
 ```
-
-## Author
-
-Kostub Deshmukh, kostub@gmail.com
-
 ## License
 
-iosMathEditor is available under the MIT license. See the LICENSE file for more info.
+MathEditor is available under the MIT license. See the
+[LICENSE](./LICENSE) file for more info.
+
