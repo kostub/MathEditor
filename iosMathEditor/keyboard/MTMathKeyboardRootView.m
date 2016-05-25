@@ -10,20 +10,17 @@
 //
 
 #import "MTMathKeyboardRootView.h"
-#import "UIColor+Hex.h"
-#import "EventLogger.h"
-#import "DisplayUtils.h"
 
 static NSInteger const DEFAULT_KEYBOARD = 0;
 
 @interface MTMathKeyboardRootView ()
 
-@property (nonatomic) MCKeyboard *currentKeyboard;
-@property (nonatomic) MCKeyboard *tab1Keyboard;
-@property (nonatomic) MCKeyboard *tab2Keyboard;
-@property (nonatomic) MCKeyboard *tab3Keyboard;
-@property (nonatomic) MCKeyboard *tab4Keyboard;
-@property (nonatomic, weak) EditableMathUILabel *textView;
+@property (nonatomic) MTKeyboard *currentKeyboard;
+@property (nonatomic) MTKeyboard *tab1Keyboard;
+@property (nonatomic) MTKeyboard *tab2Keyboard;
+@property (nonatomic) MTKeyboard *tab3Keyboard;
+@property (nonatomic) MTKeyboard *tab4Keyboard;
+@property (nonatomic, weak) MTEditableMathLabel *textView;
 @property (nonatomic) NSInteger currentTab;
 @property (nonatomic) NSArray *keyboards;
 
@@ -56,19 +53,19 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 -(void)awakeFromNib
 {
     // initialize all keyboards first
-    NSBundle* bundle = [MCMathKeyboardRootView getMathKeyboardResourcesBundle];
+    NSBundle* bundle = [MTMathKeyboardRootView getMathKeyboardResourcesBundle];
 
-    _tab1Keyboard = (MCKeyboard *)[[UINib nibWithNibName:@"MCKeyboard" bundle:bundle] instantiateWithOwner:self options:nil][0];
-    _tab2Keyboard = (MCKeyboard *)[[UINib nibWithNibName:@"MCKeyboardTab2" bundle:bundle] instantiateWithOwner:self options:nil][0];
-    _tab3Keyboard = (MCKeyboard *)[[UINib nibWithNibName:@"MCKeyboardTab3" bundle:bundle] instantiateWithOwner:self options:nil][0];
-    _tab4Keyboard = (MCKeyboard *)[[UINib nibWithNibName:@"MCKeyboardTab4" bundle:bundle] instantiateWithOwner:self options:nil][0];
+    _tab1Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboard" bundle:bundle] instantiateWithOwner:self options:nil][0];
+    _tab2Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab2" bundle:bundle] instantiateWithOwner:self options:nil][0];
+    _tab3Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab3" bundle:bundle] instantiateWithOwner:self options:nil][0];
+    _tab4Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab4" bundle:bundle] instantiateWithOwner:self options:nil][0];
 
     // TODO Use keyboard array for operations involving all tabs
     _keyboards = @[_tab1Keyboard, _tab2Keyboard, _tab3Keyboard, _tab4Keyboard];
     _currentTab = -1;
 
-    for (MCKeyboard *keyboard in _keyboards) {
-        [DisplayUtils addFullSizeView:keyboard to:_contentView];
+    for (MTKeyboard *keyboard in _keyboards) {
+        // TODO: [DisplayUtils addFullSizeView:keyboard to:_contentView];
     }
 
     [self switchKeyboard:DEFAULT_KEYBOARD];
@@ -80,7 +77,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
     [self switchKeyboard:DEFAULT_KEYBOARD];
 }
 
-- (void)setEditableMathUILabel:(EditableMathUILabel *)textView
+- (void)setEditableMathLabel:(MTEditableMathLabel *)textView
 {
     _textView = textView;
     _tab1Keyboard.textView = textView;
@@ -92,7 +89,6 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 - (IBAction)switchTabs:(UIButton *)sender
 {
     [self switchKeyboard:sender.tag];
-    [EventLogger logGAEvent:@"TabSwitch" label:[NSString stringWithFormat: @"%ld", (long)sender.tag]];
 }
 
 -(void)greyTabButtons
@@ -152,12 +148,12 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
     _currentKeyboard = newKeyboard;
 }
 
--(void)setKeyboardContext:(KeyboardContext *)context
+/*-(void)setKeyboardContext:(KeyboardContext *)context
 {
     [_tab1Keyboard setKeyboardContext:context];
     [_tab2Keyboard setKeyboardContext:context];
     [_tab3Keyboard setKeyboardContext:context];
     [_tab4Keyboard setKeyboardContext:context];
-}
+}*/
 
 @end

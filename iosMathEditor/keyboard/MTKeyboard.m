@@ -11,7 +11,6 @@
 #import "MTKeyboard.h"
 #import "MTFontManager.h"
 #import "MTMathAtomFactory.h"
-#import "EventLogger.h"
 
 @interface MTKeyboard ()
 
@@ -48,11 +47,11 @@
         CTFontManagerRegisterGraphicsFont(myFont, &error);
         if (error) {
             NSString* errorDescription = (__bridge_transfer NSString*)CFErrorCopyDescription(error);
-            InfoLog(@"Error registering font: %@", errorDescription);
+            NSLog(@"Error registering font: %@", errorDescription);
             CFRelease(error);
         }
         CGFontRelease(myFont);
-        InfoLog(@"Registered fontName: %@", fontName);
+        NSLog(@"Registered fontName: %@", fontName);
     });
     return fontName;
 }
@@ -76,35 +75,30 @@
     UIButton *button = sender;
     NSString* str = button.currentTitle;
     [self.textView insertText:str];
-    [EventLogger logGAEvent:@"KeyPress" label:str];
 }
 
 - (void)enterPressed:(id)sender
 {
     [self playClickForCustomKeyTap];
-    [EventLogger logGAEvent:@"KeyPress" label:@"Enter"];
     [self.textView insertText:@"\n"];
 }
 
 - (void)backspacePressed:(id)sender
 {
     [self playClickForCustomKeyTap];
-    
-    [EventLogger logGAEvent:@"KeyPress" label:@"delete"];
+
     [self.textView deleteBackward];
 }
 
 - (void)dismissPressed:(id)sender
 {
     [self playClickForCustomKeyTap];
-    [EventLogger logGAEvent:@"KeyPress" label:@"Dismiss"];
     [self.textView resignFirstResponder];
 }
 
 - (IBAction)absValuePressed:(id)sender
 {
     [self.textView insertText:@"||"];
-    [EventLogger logGAEvent:@"KeyPress" label:@"Abs"];
 }
 
 - (BOOL)enableInputClicksWhenVisible
@@ -121,49 +115,41 @@
 {
     [self playClickForCustomKeyTap];
     [self.textView insertText:MTSymbolFractionSlash];
-    [EventLogger logGAEvent:@"KeyPress" label:@"frac"];
 }
 
 - (IBAction)exponentPressed:(id)sender
 {
     [self playClickForCustomKeyTap];
     [self.textView insertText:@"^"];
-    [EventLogger logGAEvent:@"KeyPress" label:@"exp"];
 }
 
 - (IBAction)subscriptPressed:(id)sender
 {
     [self playClickForCustomKeyTap];
     [self.textView insertText:@"_"];
-    [EventLogger logGAEvent:@"KeyPress" label:@"subsc"];
 }
 
 - (IBAction)parensPressed:(id)sender
 {
     [self playClickForCustomKeyTap];
     [self.textView insertText:@"()"];
-    [EventLogger logGAEvent:@"KeyPress" label:@"paren"];
 }
 
 - (IBAction)squareRootPressed:(id)sender
 {
     [self playClickForCustomKeyTap];
     [self.textView insertText:MTSymbolSquareRoot];
-
-    [EventLogger logGAEvent:@"KeyPress" label:@"sqrt"];
 }
 
 - (IBAction)rootWithPowerPressed:(id)sender {
     [self playClickForCustomKeyTap];
     [self.textView insertText:MTSymbolCubeRoot];
-    [EventLogger logGAEvent:@"KeyPress" label:@"rad"];
 }
 
 - (IBAction)logWithBasePressed:(id)sender {
     [self playClickForCustomKeyTap];
     [self.textView insertText:@"log"];
     [self.textView insertText:@"_"];
-    [EventLogger logGAEvent:@"KeyPress" label:@"log_"];
 }
 
 - (IBAction)shiftPressed:(id)sender
@@ -175,7 +161,6 @@
     } else {
         [self shiftDownKeyboard];
     }
-    [EventLogger logGAEvent:@"KeyPress" label:@"shift"];
 }
 
 #pragma mark - Keyboard Context
@@ -263,7 +248,7 @@
     self.radicalButton.selected = highlighted;
 }
 
-- (void)setKeyboardContext:(KeyboardContext *)context
+/*- (void)setKeyboardContext:(KeyboardContext *)context
 {
     [self setNumbersState:context.numbersAllowed];
     [self setOperatorState:context.operatorsAllowed];
@@ -273,7 +258,7 @@
     [self setExponentState:context.exponentHighlighted];
     [self setSquareRootState:context.squareRootHighlighted];
     [self setRadicalState:context.radicalHighlighted];
-}
+}*/
 
 // Prevent touches from being propagated to super view.
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
