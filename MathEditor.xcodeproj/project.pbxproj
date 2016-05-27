@@ -141,7 +141,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		490BE5571CE695CC00AE31A0 /* iosMathEditor */ = {
+		490BE5571CE695CC00AE31A0 /* mathEditor */ = {
 			isa = PBXGroup;
 			children = (
 				49DEC8351CF5591D000053CD /* MathKeyboardResources */,
@@ -149,7 +149,7 @@
 				49DEC8271CF55265000053CD /* editor */,
 				49DEC81D1CF5523E000053CD /* internal */,
 			);
-			path = iosMathEditor;
+			path = mathEditor;
 			sourceTree = "<group>";
 		};
 		49DEC81D1CF5523E000053CD /* internal */ = {
@@ -223,7 +223,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* MathEditorExample */,
 				6003F5B5195388D20070C39A /* Tests */,
-				490BE5571CE695CC00AE31A0 /* iosMathEditor */,
+				490BE5571CE695CC00AE31A0 /* mathEditor */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				4D5F9F41E950A502FB2B3BEA /* Pods */,
