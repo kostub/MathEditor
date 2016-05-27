@@ -224,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for iosMathEditor */,
+				6003F593195388D20070C39A /* MathEditorExample */,
 				6003F5B5195388D20070C39A /* Tests */,
 				490BE5571CE695CC00AE31A0 /* iosMathEditor */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -260,7 +260,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* Example for iosMathEditor */ = {
+		6003F593195388D20070C39A /* MathEditorExample */ = {
 			isa = PBXGroup;
 			children = (
 				6003F59C195388D20070C39A /* MTAppDelegate.h */,
@@ -271,8 +271,7 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			name = "Example for iosMathEditor";
-			path = iosMathEditor;
+			path = MathEditorExample;
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
@@ -728,9 +727,9 @@
 			baseConfigurationReference = C22335FDD0B9F56B94B8187A /* Pods-MathEditor_Example.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iosMathEditor/MathEditor-Prefix.pch";
-				INFOPLIST_FILE = "iosMathEditor/iosMathEditor-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = MathChat.iosMathEditorExample;
+				GCC_PREFIX_HEADER = "MathEditorExample/MathEditor-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MathEditorExample/iosMathEditor-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = MathChat.MathEditorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -741,9 +740,9 @@
 			baseConfigurationReference = 7A378091F23FA26A8EEA2F82 /* Pods-MathEditor_Example.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iosMathEditor/MathEditor-Prefix.pch";
-				INFOPLIST_FILE = "iosMathEditor/iosMathEditor-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = MathChat.iosMathEditorExample;
+				GCC_PREFIX_HEADER = "MathEditorExample/MathEditor-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MathEditorExample/iosMathEditor-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = MathChat.MathEditorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
