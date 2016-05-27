@@ -5,16 +5,16 @@ PODS:
 
 DEPENDENCIES:
   - iosMath
-  - MathEditor (from `../`)
+  - MathEditor (from `./`)
 
 EXTERNAL SOURCES:
   MathEditor:
-    :path: ../
+    :path: ./
 
 SPEC CHECKSUMS:
   iosMath: e8e312a440dc37619153a16f45dbd4c99308b1cb
   MathEditor: 34e92bd2837445aa07b019d43d55c84813e21fd3
 
-PODFILE CHECKSUM: d7e5ee8d977d9eaa22df95948ddbd5f2170d8482
+PODFILE CHECKSUM: b77c40dfa2eff114e9f7c2e799aaf7c75bcf1991
 
 COCOAPODS: 1.0.0
