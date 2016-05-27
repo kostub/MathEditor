@@ -17,7 +17,7 @@
                BlueprintIdentifier = "6003F589195388D20070C39A"
                BuildableName = "MathEditor_Example.app"
                BlueprintName = "MathEditor_Example"
-               ReferencedContainer = "container:iosMathEditor.xcodeproj">
+               ReferencedContainer = "container:MathEditor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
                BuildableName = "MathEditor_Tests.xctest"
                BlueprintName = "MathEditor_Tests"
-               ReferencedContainer = "container:iosMathEditor.xcodeproj">
+               ReferencedContainer = "container:MathEditor.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "MathEditor_Example.app"
             BlueprintName = "MathEditor_Example"
-            ReferencedContainer = "container:iosMathEditor.xcodeproj">
+            ReferencedContainer = "container:MathEditor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "MathEditor_Example.app"
             BlueprintName = "MathEditor_Example"
-            ReferencedContainer = "container:iosMathEditor.xcodeproj">
+            ReferencedContainer = "container:MathEditor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "MathEditor_Example.app"
             BlueprintName = "MathEditor_Example"
-            ReferencedContainer = "container:iosMathEditor.xcodeproj">
+            ReferencedContainer = "container:MathEditor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
