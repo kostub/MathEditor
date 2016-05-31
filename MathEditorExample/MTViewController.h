@@ -17,5 +17,6 @@
 
 @property (weak, nonatomic) IBOutlet MTEditableMathLabel *mathLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *labelHeight;
+@property (weak, nonatomic) IBOutlet UILabel *placeholderLabel;
 
 @end

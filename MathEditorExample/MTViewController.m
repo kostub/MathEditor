@@ -72,4 +72,10 @@
         }
     }
 }
+
+- (void)didBeginEditing:(MTEditableMathLabel *)label
+{
+    self.placeholderLabel.hidden = YES;
+}
+
 @end

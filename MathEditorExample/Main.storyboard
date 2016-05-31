@@ -24,18 +24,27 @@
                                     <constraint firstAttribute="height" constant="64" id="BiY-r6-E8l"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-m7-OVr">
+                                <rect key="frame" x="250" y="105" width="101" height="22"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="E4P-nH-Xa2" secondAttribute="trailing" constant="20" id="0Of-MG-kAp"/>
                             <constraint firstItem="E4P-nH-Xa2" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="2g2-Z2-abR"/>
+                            <constraint firstItem="dTf-m7-OVr" firstAttribute="centerX" secondItem="E4P-nH-Xa2" secondAttribute="centerX" id="GyB-Yd-QJS"/>
                             <constraint firstItem="E4P-nH-Xa2" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="64" id="Tqr-eY-YYf"/>
+                            <constraint firstItem="dTf-m7-OVr" firstAttribute="centerY" secondItem="E4P-nH-Xa2" secondAttribute="centerY" id="bQ1-UF-Lf0"/>
                             <constraint firstItem="E4P-nH-Xa2" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="uSf-XF-Dbu"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="labelHeight" destination="BiY-r6-E8l" id="Mpj-nS-ghc"/>
                         <outlet property="mathLabel" destination="E4P-nH-Xa2" id="iBa-K5-SRT"/>
+                        <outlet property="placeholderLabel" destination="dTf-m7-OVr" id="T34-lX-zxI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
