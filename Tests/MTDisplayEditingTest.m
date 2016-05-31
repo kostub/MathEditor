@@ -19,7 +19,7 @@
 
 @interface MTDisplayEditingTest : XCTestCase
 
-@property (nonatomic) CTFontRef font;
+@property (nonatomic) MTFont* font;
 @end
 
 
@@ -30,17 +30,13 @@
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     CGFloat fontSize = 20;
-    _font = [[MTFontManager fontManager] createCTFontFromDefaultFont:fontSize];
-    CFRetain(_font);
+    _font = [[MTFontManager fontManager] latinModernFontWithSize:fontSize];
 }
 
 - (void)tearDown
 {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
-    if (_font) {
-        CFRelease(_font);
-    }
 }
 
 static NSValue* point(CGFloat x, CGFloat y) {

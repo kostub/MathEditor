@@ -15,7 +15,6 @@
 		49DEC8251CF5523E000053CD /* MTDisplay+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8211CF5523E000053CD /* MTDisplay+Editing.m */; };
 		49DEC8261CF5523E000053CD /* MTMathList+Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8231CF5523E000053CD /* MTMathList+Editing.m */; };
 		49DEC82C1CF55265000053CD /* MTEditableMathLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8291CF55265000053CD /* MTEditableMathLabel.m */; };
-		49DEC82D1CF55265000053CD /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC82B1CF55265000053CD /* MTMathListIndex.m */; };
 		49DEC8331CF5588C000053CD /* MTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8301CF5588C000053CD /* MTKeyboard.m */; };
 		49DEC8341CF5588C000053CD /* MTMathKeyboardRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8321CF5588C000053CD /* MTMathKeyboardRootView.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -61,8 +60,6 @@
 		49DEC8231CF5523E000053CD /* MTMathList+Editing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTMathList+Editing.m"; sourceTree = "<group>"; };
 		49DEC8281CF55265000053CD /* MTEditableMathLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTEditableMathLabel.h; sourceTree = "<group>"; };
 		49DEC8291CF55265000053CD /* MTEditableMathLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTEditableMathLabel.m; sourceTree = "<group>"; };
-		49DEC82A1CF55265000053CD /* MTMathListIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListIndex.h; sourceTree = "<group>"; };
-		49DEC82B1CF55265000053CD /* MTMathListIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListIndex.m; sourceTree = "<group>"; };
 		49DEC82F1CF5588C000053CD /* MTKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKeyboard.h; sourceTree = "<group>"; };
 		49DEC8301CF5588C000053CD /* MTKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKeyboard.m; sourceTree = "<group>"; };
 		49DEC8311CF5588C000053CD /* MTMathKeyboardRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathKeyboardRootView.h; sourceTree = "<group>"; };
@@ -170,8 +167,6 @@
 			children = (
 				49DEC8281CF55265000053CD /* MTEditableMathLabel.h */,
 				49DEC8291CF55265000053CD /* MTEditableMathLabel.m */,
-				49DEC82A1CF55265000053CD /* MTMathListIndex.h */,
-				49DEC82B1CF55265000053CD /* MTMathListIndex.m */,
 			);
 			path = editor;
 			sourceTree = "<group>";
@@ -557,7 +552,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49DEC82D1CF55265000053CD /* MTMathListIndex.m in Sources */,
 				49DEC8251CF5523E000053CD /* MTDisplay+Editing.m in Sources */,
 				49DEC82C1CF55265000053CD /* MTEditableMathLabel.m in Sources */,
 				49DEC8241CF5523E000053CD /* MTCaretView.m in Sources */,
