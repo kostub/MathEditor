@@ -66,6 +66,7 @@
 
 @property (nonatomic) MTMathList* mathList;
 @property (nonatomic) UIColor* highlightColor;
+@property (nonatomic) UIColor* textColor;
 
 @property (nonatomic) UIImageView* cancelImage;
 @property (nonatomic, weak) id<MTEditableMathLabelDelegate> delegate;

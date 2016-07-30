@@ -95,6 +95,7 @@
 
     _indicesToHighlight = [NSMutableArray array];
     _highlightColor = [UIColor colorWithRed:0.8 green:0 blue:0.0 alpha:1.0];
+    _textColor = [UIColor blackColor]; // Default text color
     [self bringSubviewToFront:self.cancelImage];
     
     // start with an empty math list
@@ -128,6 +129,10 @@
     _caretView.fontSize = fontSize;
     // Update the cursor position when the font size changes.
     [self insertionPointChanged];
+}
+
+- (void)setTextColor:(UIColor *)textColor {
+    self.label.textColor = textColor;
 }
 
 - (CGFloat)fontSize

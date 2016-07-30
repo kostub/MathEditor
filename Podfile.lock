@@ -1,20 +1,27 @@
 PODS:
-  - iosMath (0.7.3)
-  - MathEditor (0.1.0):
-    - iosMath (~> 0.7.3)
+  - iosMath (0.8.2)
+  - MathEditor (0.2.0):
+    - iosMath
 
 DEPENDENCIES:
-  - iosMath
+  - iosMath (from `https://github.com/socraticorg/iosMath.git`)
   - MathEditor (from `./`)
 
 EXTERNAL SOURCES:
+  iosMath:
+    :git: https://github.com/socraticorg/iosMath.git
   MathEditor:
     :path: ./
 
+CHECKOUT OPTIONS:
+  iosMath:
+    :commit: 9a2a2ff6d80783ce0a06fd260d68e0ecafdeb4cd
+    :git: https://github.com/socraticorg/iosMath.git
+
 SPEC CHECKSUMS:
-  iosMath: 2ac7b3a6a7bf887a4ab44d6964c6cad406722f89
-  MathEditor: f5968ec6c15108562d413d258ac3428c46797608
+  iosMath: 1860211e90d41607415a746977a8e8597154ba4c
+  MathEditor: 2f11aeb734342651fc9b6b2cd2d5407016102725
 
-PODFILE CHECKSUM: 824592d1d06afe0a23f07736e4e1f8968e497263
+PODFILE CHECKSUM: 2409db70e1a41fa016e0f8175e4a3eee55f83dce
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1
