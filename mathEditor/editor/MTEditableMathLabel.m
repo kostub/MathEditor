@@ -135,6 +135,10 @@
     self.label.textColor = textColor;
 }
 
+- (void)setTextAlignment:(MTTextAlignment *)textAlignment {
+    self.label.textAlignment = textAlignment;
+}
+
 - (CGFloat)fontSize
 {
     return self.label.fontSize;
