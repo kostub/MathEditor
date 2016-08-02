@@ -11,6 +11,7 @@
 
 #import "MTViewController.h"
 #import "MTMathKeyboardRootView.h"
+#import "MTScrollingMathKeyboardRootView.h"
 
 @interface MTViewController () <MTEditableMathLabelDelegate>
 
@@ -26,7 +27,7 @@
     self.mathLabel.layer.cornerRadius = 5;
     self.mathLabel.textColor = [UIColor blueColor];
     self.mathLabel.textAlignment = kMTTextAlignmentLeft;
-    self.mathLabel.keyboard = [MTMathKeyboardRootView sharedInstance];
+    self.mathLabel.keyboard = [MTScrollingMathKeyboardRootView sharedInstance];
     self.mathLabel.delegate = self;
     [self.mathLabel enableTap:YES];
 }
