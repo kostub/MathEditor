@@ -48,21 +48,17 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 
 -(void)awakeFromNib
 {
-//    // initialize all keyboards first
-//    NSBundle* bundle = [MTScrollingMathKeyboardRootView getMathKeyboardResourcesBundle];
-//    
-//    _tab1Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboard" bundle:bundle] instantiateWithOwner:self options:nil][0];
-//    _tab2Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab2" bundle:bundle] instantiateWithOwner:self options:nil][0];
-//    _tab3Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab3" bundle:bundle] instantiateWithOwner:self options:nil][0];
-//    _tab4Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab4" bundle:bundle] instantiateWithOwner:self options:nil][0];
-//    
-//    // TODO Use keyboard array for operations involving all tabs
-//    _keyboards = @[_tab1Keyboard, _tab2Keyboard, _tab3Keyboard, _tab4Keyboard];
-//    _currentTab = -1;
-//    
-//    for (MTKeyboard *keyboard in _keyboards) {
-//        [self addFullSizeView:keyboard to:_contentView];
-//    }
+    for (UIView *columnView in self.scrollView.subviews) {
+        columnView.backgroundColor = [UIColor clearColor];
+        
+        for (UIView *buttonView in columnView.subviews) {
+            if ([buttonView isKindOfClass:[UIButton class]]) {
+                UIButton *button = (UIButton *)buttonView;
+                button.layer.cornerRadius = 5;
+                button.backgroundColor = [UIColor whiteColor];
+            }
+        }
+    }
     
     [self switchKeyboard:DEFAULT_KEYBOARD];
 }
