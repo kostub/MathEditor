@@ -54,8 +54,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
         for (UIView *buttonView in columnView.subviews) {
             if ([buttonView isKindOfClass:[UIButton class]]) {
                 UIButton *button = (UIButton *)buttonView;
-                button.layer.cornerRadius = 5;
-                button.backgroundColor = [UIColor whiteColor];
+                button.layer.cornerRadius = 5;                
             }
         }
     }
