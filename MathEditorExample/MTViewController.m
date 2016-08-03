@@ -25,9 +25,10 @@
     self.mathLabel.layer.borderColor = [UIColor blackColor].CGColor;
     self.mathLabel.layer.borderWidth = 2;
     self.mathLabel.layer.cornerRadius = 5;
-    self.mathLabel.textColor = [UIColor blueColor];
-    self.mathLabel.textAlignment = kMTTextAlignmentLeft;
+    self.mathLabel.textColor = [UIColor blackColor];
+    self.mathLabel.textAlignment = kMTTextAlignmentCenter;
     self.mathLabel.keyboard = [MTScrollingMathKeyboardRootView sharedInstance];
+//    self.mathLabel.keyboard = [MTMathKeyboardRootView sharedInstance];
     self.mathLabel.delegate = self;
     [self.mathLabel enableTap:YES];
 }

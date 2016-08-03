@@ -14,6 +14,7 @@
 @interface MTScrollingMathKeyboardRootView : UIView<MTMathKeyboard>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, weak) UIView<UIKeyInput>* textView;
 
 + (MTScrollingMathKeyboardRootView *)sharedInstance;
 
