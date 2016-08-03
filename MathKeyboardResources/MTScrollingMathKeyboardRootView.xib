@@ -28,7 +28,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="XTt-pq-YYi" secondAttribute="height" multiplier="1:1" id="VF4-ns-wWe"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="X"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="HKK-EJ-tHD"/>
                                             </connections>
@@ -36,7 +36,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaA-FI-Dzc" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="y"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="eoU-H6-rzA"/>
                                             </connections>
@@ -44,7 +44,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcX-a4-fCy" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="z"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="63Y-wI-QYR"/>
                                             </connections>
@@ -52,7 +52,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjM-oA-XSY" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Comma"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="x70-N5-fTU"/>
                                             </connections>
@@ -87,7 +87,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="r9A-VG-Pgg" secondAttribute="height" multiplier="1:1" id="jem-DH-l9v"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="7"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="9MH-mg-Ipa"/>
                                             </connections>
@@ -95,7 +95,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cV5-20-lKm" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="4"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="CIj-go-evf"/>
                                             </connections>
@@ -103,7 +103,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4f-LS-OGI" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="1"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="WjD-cr-Gqd"/>
                                             </connections>
@@ -111,7 +111,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4f-l2-NQ1" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Decimal"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="w4U-8c-yyM"/>
                                             </connections>
@@ -144,7 +144,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="08P-uw-hm9" secondAttribute="height" multiplier="1:1" id="rxu-82-DX8"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="8"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="4az-MD-dpx"/>
                                             </connections>
@@ -152,7 +152,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOO-TU-EKz" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="5"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="3ga-MA-dmB"/>
                                             </connections>
@@ -160,7 +160,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsh-jO-gtE" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="2"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="6wC-Vg-rbz"/>
                                             </connections>
@@ -168,7 +168,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydY-By-Q49" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="0"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="eJu-Az-flx"/>
                                             </connections>
@@ -201,7 +201,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="TCq-k2-FR6" secondAttribute="height" multiplier="1:1" id="RyP-wX-fD7"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="9"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="QWk-u4-j7G"/>
                                             </connections>
@@ -209,7 +209,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkb-Ur-1te" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="6"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="geB-pr-PdX"/>
                                             </connections>
@@ -217,7 +217,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tq-M7-8Mb" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="3"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="6K8-n4-0ps"/>
                                             </connections>
@@ -225,7 +225,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxX-Qn-4sW" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Equals"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="YQd-Bw-2FJ"/>
                                             </connections>
@@ -258,7 +258,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="kql-50-ya4" secondAttribute="height" multiplier="1:1" id="JGH-80-SL5"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Divide"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="xMH-Er-Oda"/>
                                             </connections>
@@ -266,7 +266,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5v-3o-t3b" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Scroll_Multiply"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ntZ-SG-MKf"/>
                                             </connections>
@@ -274,7 +274,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3f-aF-wl2" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Plus"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="XZO-Jb-UG2"/>
                                             </connections>
@@ -282,7 +282,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT1-6t-MXL" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Subtract"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="op6-JT-PHG"/>
                                             </connections>
@@ -315,7 +315,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="xDI-5r-nde" secondAttribute="height" multiplier="1:1" id="RH5-5l-qid"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Left parenthesis"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="CN4-hW-fvd"/>
                                             </connections>
@@ -323,7 +323,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T48-Xx-LCn" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Scroll_Exponent"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="EuM-kn-VNw"/>
                                             </connections>
@@ -331,7 +331,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iT8-2v-hpH" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Scroll_Fraction"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="jaz-bT-dYI"/>
                                             </connections>
@@ -339,7 +339,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-2z-b6W" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Scroll_Sqrt"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Csa-Yt-Nwf"/>
                                             </connections>
@@ -372,7 +372,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="3xj-SO-oxk" secondAttribute="height" multiplier="1:1" id="gbh-GB-Bkf"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Right parenthesis"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="tym-DC-guh"/>
                                             </connections>
@@ -380,7 +380,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieK-Er-Ybc" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Scroll_Subscript"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ixy-2s-Xld"/>
                                             </connections>
@@ -388,7 +388,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37c-zV-jxp" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Absolute value"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="fN5-hY-f2H"/>
                                             </connections>
@@ -396,7 +396,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyl-yL-OfI" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Nth root"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="gs9-q3-dTf"/>
                                             </connections>
@@ -429,7 +429,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Xwm-ZV-6Se" secondAttribute="height" multiplier="1:1" id="1ah-o7-za5"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Left bracket"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="evd-23-vBn"/>
                                             </connections>
@@ -437,7 +437,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFU-AY-aAb" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Left curly bracket"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0Gp-Kx-PI6"/>
                                             </connections>
@@ -445,7 +445,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="had-GQ-8g4" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Greater than"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="QM1-sZ-p0f"/>
                                             </connections>
@@ -453,7 +453,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mH9-cx-nL3" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Greater than equal to"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="LmH-RP-0DA"/>
                                             </connections>
@@ -486,7 +486,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="MpI-QJ-uE8" secondAttribute="height" multiplier="1:1" id="Bdf-0U-aDr"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Right bracket"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="KME-Xx-flr"/>
                                             </connections>
@@ -494,7 +494,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-kP-gWg" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Right curly bracket"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="MuR-qW-Mfh"/>
                                             </connections>
@@ -502,7 +502,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IE-LP-lWn" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Less than"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="iFG-BE-idg"/>
                                             </connections>
@@ -510,7 +510,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eA9-4Z-WB8" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Less than equal to"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="lyb-o5-rhr"/>
                                             </connections>
@@ -543,7 +543,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="DmW-BL-doj" secondAttribute="height" multiplier="1:1" id="iiO-T3-UEE"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Sin"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="xCY-xE-NOs"/>
                                             </connections>
@@ -551,7 +551,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDU-nw-X3A" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Csc"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="uii-BW-P7d"/>
                                             </connections>
@@ -559,7 +559,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2F-Rl-etd" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Pi"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="gfy-36-SKc"/>
                                             </connections>
@@ -567,7 +567,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-UI-KhG" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Degree"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="qLn-ZS-yjH"/>
                                             </connections>
@@ -600,7 +600,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="aA8-rj-ytC" secondAttribute="height" multiplier="1:1" id="UHB-Av-8Rv"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Cos"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="snQ-iK-8a5"/>
                                             </connections>
@@ -608,7 +608,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVY-o5-PfC" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Sec"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="wPR-Wi-fGf"/>
                                             </connections>
@@ -616,7 +616,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ql-bH-cOW" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Theta"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="vdg-f7-dqM"/>
                                             </connections>
@@ -624,7 +624,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhy-RE-R16" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Angle"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="5kS-zx-Gpr"/>
                                             </connections>
@@ -657,7 +657,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Gct-GA-gt4" secondAttribute="height" multiplier="1:1" id="UNe-Oy-Gzp"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Tan"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="WBy-Tv-PZb"/>
                                             </connections>
@@ -665,12 +665,12 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TK9-bv-LjW" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Cot"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="aFg-4M-sDm"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oId-1D-aBG" userLabel="Button">
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oId-1D-aBG" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" image="scroll_x_icon"/>
@@ -678,7 +678,7 @@
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="X6y-E3-Wvc"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abl-RF-EbC" userLabel="Button">
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abl-RF-EbC" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" image="scroll_x_icon"/>
@@ -709,12 +709,12 @@
                                     <rect key="frame" x="523" y="0.0" width="40" height="185"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0O-W9-usk" userLabel="Button">
-                                            <rect key="frame" x="1" y="4" width="37" height="37"/>
+                                            <rect key="frame" x="1.5" y="4" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="h0O-W9-usk" secondAttribute="height" multiplier="1:1" id="ilA-kI-vdL"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="E"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="opv-NA-hIp"/>
                                             </connections>
@@ -722,12 +722,12 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6M2-bc-oWK" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Log"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ndh-7k-8Ka"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Doz-bX-brj" userLabel="Button">
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Doz-bX-brj" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" image="scroll_x_icon"/>
@@ -735,7 +735,7 @@
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="PLT-4Z-6Dz"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zz-kC-8mP" userLabel="Button">
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zz-kC-8mP" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" image="scroll_x_icon"/>
@@ -771,7 +771,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="yVS-of-FbH" secondAttribute="height" multiplier="1:1" id="a6A-bM-wqg"/>
                                             </constraints>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Ln"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="aSK-KN-WJ3"/>
                                             </connections>
@@ -779,12 +779,12 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omd-8L-hlm" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="scroll_x_icon"/>
+                                            <state key="normal" image="Log n"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="U6K-Kw-b5y"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9s-fF-gpO" userLabel="Button">
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9s-fF-gpO" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" image="scroll_x_icon"/>
@@ -792,7 +792,7 @@
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mak-Mv-xf6"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkG-pv-7n4" userLabel="Button">
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkG-pv-7n4" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" image="scroll_x_icon"/>
@@ -945,6 +945,56 @@
         </view>
     </objects>
     <resources>
+        <image name="0" width="46" height="47"/>
+        <image name="1" width="46" height="47"/>
+        <image name="2" width="46" height="47"/>
+        <image name="3" width="46" height="47"/>
+        <image name="4" width="46" height="47"/>
+        <image name="5" width="46" height="47"/>
+        <image name="6" width="46" height="47"/>
+        <image name="7" width="46" height="47"/>
+        <image name="8" width="46" height="47"/>
+        <image name="9" width="46" height="47"/>
+        <image name="Absolute value" width="46" height="47"/>
+        <image name="Angle" width="46" height="47"/>
+        <image name="Comma" width="46" height="47"/>
+        <image name="Cos" width="46" height="47"/>
+        <image name="Cot" width="46" height="47"/>
+        <image name="Csc" width="46" height="47"/>
+        <image name="Decimal" width="46" height="47"/>
+        <image name="Degree" width="46" height="47"/>
+        <image name="Divide" width="46" height="47"/>
+        <image name="E" width="46" height="47"/>
+        <image name="Equals" width="46" height="47"/>
+        <image name="Greater than" width="46" height="47"/>
+        <image name="Greater than equal to" width="46" height="47"/>
+        <image name="Left bracket" width="46" height="47"/>
+        <image name="Left curly bracket" width="46" height="47"/>
+        <image name="Left parenthesis" width="46" height="47"/>
+        <image name="Less than" width="46" height="47"/>
+        <image name="Less than equal to" width="46" height="47"/>
+        <image name="Ln" width="46" height="47"/>
+        <image name="Log" width="46" height="47"/>
+        <image name="Log n" width="46" height="47"/>
+        <image name="Nth root" width="46" height="47"/>
+        <image name="Pi" width="46" height="47"/>
+        <image name="Plus" width="46" height="47"/>
+        <image name="Right bracket" width="46" height="47"/>
+        <image name="Right curly bracket" width="46" height="47"/>
+        <image name="Right parenthesis" width="46" height="47"/>
+        <image name="Scroll_Exponent" width="46" height="47"/>
+        <image name="Scroll_Fraction" width="46" height="47"/>
+        <image name="Scroll_Multiply" width="46" height="47"/>
+        <image name="Scroll_Sqrt" width="46" height="47"/>
+        <image name="Scroll_Subscript" width="46" height="47"/>
+        <image name="Sec" width="46" height="47"/>
+        <image name="Sin" width="46" height="47"/>
+        <image name="Subtract" width="46" height="47"/>
+        <image name="Tan" width="46" height="47"/>
+        <image name="Theta" width="46" height="47"/>
+        <image name="X" width="46" height="47"/>
         <image name="scroll_x_icon" width="46" height="47"/>
+        <image name="y" width="46" height="47"/>
+        <image name="z" width="46" height="47"/>
     </resources>
 </document>
