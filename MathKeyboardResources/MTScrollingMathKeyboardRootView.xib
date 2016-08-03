@@ -254,7 +254,7 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kql-50-ya4" userLabel="Button">
                                             <rect key="frame" x="1" y="4" width="37" height="37"/>
-                                            <color key="backgroundColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="kql-50-ya4" secondAttribute="height" multiplier="1:1" id="JGH-80-SL5"/>
                                             </constraints>
@@ -265,7 +265,7 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5v-3o-t3b" userLabel="Button">
                                             <rect key="frame" x="1" y="51" width="37" height="37"/>
-                                            <color key="backgroundColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" image="Scroll_Multiply"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ntZ-SG-MKf"/>
@@ -273,7 +273,7 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3f-aF-wl2" userLabel="Button">
                                             <rect key="frame" x="1" y="97" width="37" height="37"/>
-                                            <color key="backgroundColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" image="Plus"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="XZO-Jb-UG2"/>
@@ -281,7 +281,7 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT1-6t-MXL" userLabel="Button">
                                             <rect key="frame" x="1" y="143" width="37" height="37"/>
-                                            <color key="backgroundColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" image="Subtract"/>
                                             <connections>
                                                 <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="op6-JT-PHG"/>
@@ -820,7 +820,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="MpI-QJ-uE8" firstAttribute="width" secondItem="XTt-pq-YYi" secondAttribute="width" id="2AY-GA-wAv"/>
                                 <constraint firstItem="Nll-Ia-6uT" firstAttribute="width" secondItem="Cja-IM-uxo" secondAttribute="width" id="2Cl-Bf-LsY"/>
@@ -907,22 +907,28 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNv-XZ-eLu" userLabel="Bottom Bar Contariner">
                     <rect key="frame" x="0.0" y="185" width="320" height="40"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-kK-o4W">
-                            <rect key="frame" x="264" y="5" width="48" height="30"/>
-                            <state key="normal" title="Search"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-kK-o4W">
+                            <rect key="frame" x="230" y="4" width="82" height="32"/>
+                            <state key="normal" image="Search button"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-5f-aAF">
-                            <rect key="frame" x="218" y="5" width="30" height="30"/>
-                            <state key="normal" title="X"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-5f-aAF">
+                            <rect key="frame" x="176" y="4" width="39" height="32"/>
+                            <state key="normal" image="Delete button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlm-aL-cQx">
+                            <rect key="frame" x="8" y="4" width="52" height="32"/>
+                            <state key="normal" image="Clear button"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="vlm-aL-cQx" firstAttribute="leading" secondItem="QNv-XZ-eLu" secondAttribute="leading" constant="8" id="8xS-IT-Yqx"/>
                         <constraint firstAttribute="trailing" secondItem="fzg-kK-o4W" secondAttribute="trailing" constant="8" id="FWn-m3-5Ot"/>
                         <constraint firstItem="fzg-kK-o4W" firstAttribute="centerY" secondItem="QNv-XZ-eLu" secondAttribute="centerY" id="UjZ-jU-sMP"/>
                         <constraint firstItem="cAx-5f-aAF" firstAttribute="centerY" secondItem="fzg-kK-o4W" secondAttribute="centerY" id="jAL-yj-zoN"/>
+                        <constraint firstItem="vlm-aL-cQx" firstAttribute="centerY" secondItem="QNv-XZ-eLu" secondAttribute="centerY" id="wek-MV-Mwf"/>
                         <constraint firstAttribute="height" constant="40" id="xMr-Qt-qAG"/>
-                        <constraint firstItem="fzg-kK-o4W" firstAttribute="leading" secondItem="cAx-5f-aAF" secondAttribute="trailing" constant="16" id="z7o-iF-RoF"/>
+                        <constraint firstItem="fzg-kK-o4W" firstAttribute="leading" secondItem="cAx-5f-aAF" secondAttribute="trailing" constant="15" id="z7o-iF-RoF"/>
                     </constraints>
                 </view>
             </subviews>
@@ -957,12 +963,14 @@
         <image name="9" width="46" height="47"/>
         <image name="Absolute value" width="46" height="47"/>
         <image name="Angle" width="46" height="47"/>
+        <image name="Clear button" width="52" height="32"/>
         <image name="Comma" width="46" height="47"/>
         <image name="Cos" width="46" height="47"/>
         <image name="Cot" width="46" height="47"/>
         <image name="Csc" width="46" height="47"/>
         <image name="Decimal" width="46" height="47"/>
         <image name="Degree" width="46" height="47"/>
+        <image name="Delete button" width="39" height="32"/>
         <image name="Divide" width="46" height="47"/>
         <image name="E" width="46" height="47"/>
         <image name="Equals" width="46" height="47"/>
@@ -987,6 +995,7 @@
         <image name="Scroll_Multiply" width="46" height="47"/>
         <image name="Scroll_Sqrt" width="46" height="47"/>
         <image name="Scroll_Subscript" width="46" height="47"/>
+        <image name="Search button" width="82" height="32"/>
         <image name="Sec" width="46" height="47"/>
         <image name="Sin" width="46" height="47"/>
         <image name="Subtract" width="46" height="47"/>
