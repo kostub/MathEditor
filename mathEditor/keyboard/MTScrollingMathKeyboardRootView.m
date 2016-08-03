@@ -192,94 +192,94 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
             [self.textView insertText:@"="];
             break;
         case 16:
-            [self.textView insertText:@"("];
+            [self.textView insertText:@"÷"];
             break;
         case 17:
-            [self.textView insertText:@"^"];
+            [self.textView insertText:@"×"];
             break;
         case 18:
-            [self.textView insertText:MTSymbolFractionSlash];
+            [self.textView insertText:@"+"];
             break;
         case 19:
-            //
+            [self.textView insertText:@"-"];
             break;
         case 20:
-            //
+            [self.textView insertText:@"("];
             break;
         case 21:
-            //
+            [self.textView insertText:@"^"];
             break;
         case 22:
-            //
+            [self.textView insertText:MTSymbolFractionSlash];
             break;
         case 23:
-            //
+            [self.textView insertText:MTSymbolSquareRoot];
             break;
         case 24:
-            //
+            [self.textView insertText:@")"];
             break;
         case 25:
-            //
+            [self.textView insertText:@"_"];
             break;
         case 26:
-            //
+            [self.textView insertText:@"||"];
             break;
         case 27:
-            //
+            [self.textView insertText:MTSymbolCubeRoot];
             break;
         case 28:
-            //
+            [self.textView insertText:@"["];
             break;
         case 29:
-            //
+            [self.textView insertText:@"{"];
             break;
         case 30:
-            //
+            [self.textView insertText:@">"];
             break;
         case 31:
-            //
+            [self.textView insertText:@"≥"];
             break;
         case 32:
-            //
+            [self.textView insertText:@"]"];
             break;
         case 33:
-            //
+            [self.textView insertText:@"}"];
             break;
         case 34:
-            //
+            [self.textView insertText:@"<"];
             break;
         case 35:
-            //
+            [self.textView insertText:@"≤"];
             break;
         case 36:
-            //
+            [self.textView insertText:@"sin"];
             break;
         case 37:
-            //
+            [self.textView insertText:@"csc"];
             break;
         case 38:
-            //
+            [self.textView insertText:@"π"];
             break;
         case 39:
-            //
+            [self.textView insertText:@"°"];
             break;
         case 40:
-            //
+            [self.textView insertText:@"cos"];
             break;
         case 41:
-            //
+            [self.textView insertText:@"sec"];
             break;
         case 42:
-            //
+            [self.textView insertText:@"θ"];
             break;
         case 43:
-            //
+            [self.textView insertText:@"∠"];
             break;
         case 44:
-            //
+            [self.textView insertText:@"tan"];
             break;
         case 45:
-            //
+            [self.textView insertText:@"cot"];
             break;
         case 46:
             //
@@ -288,10 +288,10 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
             //
             break;
         case 48:
-            //
+            [self.textView insertText:@"e"];
             break;
         case 49:
-            //
+            [self.textView insertText:@"log"];
             break;
         case 50:
             //
@@ -300,10 +300,11 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
             //
             break;
         case 52:
-            //
+            [self.textView insertText:@"ln"];
             break;
         case 53:
-            //
+            [self.textView insertText:@"log"];
+            [self.textView insertText:@"_"];
             break;
         case 54:
             //
@@ -311,11 +312,8 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
         case 55:
             //
             break;
-        case 56:
-            //
-            break;
         default:
-            NSLog(@"Unhandled button click");
+            NSLog(@"Unsupport button tag click");
             break;
     }
 }
