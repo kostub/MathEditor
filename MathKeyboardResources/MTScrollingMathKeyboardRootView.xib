@@ -706,7 +706,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-2W-jxM" userLabel="Column 13">
-                                    <rect key="frame" x="523" y="0.0" width="40" height="185"/>
+                                    <rect key="frame" x="530" y="0.0" width="40" height="185"/>
                                     <subviews>
                                         <button opaque="NO" tag="148" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0O-W9-usk" userLabel="Button">
                                             <rect key="frame" x="1.5" y="4" width="37" height="37"/>
@@ -763,7 +763,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrE-qV-qxQ" userLabel="Column 14">
-                                    <rect key="frame" x="563" y="0.0" width="40" height="185"/>
+                                    <rect key="frame" x="570" y="0.0" width="40" height="185"/>
                                     <subviews>
                                         <button opaque="NO" tag="152" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVS-of-FbH" userLabel="Button">
                                             <rect key="frame" x="1" y="4" width="37" height="37"/>
@@ -856,7 +856,7 @@
                                 <constraint firstAttribute="bottom" secondItem="CQR-lZ-KlW" secondAttribute="bottom" id="Sd4-q9-z1m"/>
                                 <constraint firstItem="TCq-k2-FR6" firstAttribute="height" secondItem="XTt-pq-YYi" secondAttribute="height" id="VWU-Oc-t0a"/>
                                 <constraint firstItem="PAY-2W-jxM" firstAttribute="width" secondItem="Cja-IM-uxo" secondAttribute="width" id="Vw0-eI-AzR"/>
-                                <constraint firstItem="PAY-2W-jxM" firstAttribute="leading" secondItem="1Q2-1D-U2Y" secondAttribute="trailing" constant="8" id="WnY-So-1Ig"/>
+                                <constraint firstItem="PAY-2W-jxM" firstAttribute="leading" secondItem="1Q2-1D-U2Y" secondAttribute="trailing" constant="15" id="WnY-So-1Ig"/>
                                 <constraint firstItem="xXw-pQ-7cA" firstAttribute="width" secondItem="Cja-IM-uxo" secondAttribute="width" id="XaF-7m-W6p"/>
                                 <constraint firstAttribute="bottom" secondItem="PAY-2W-jxM" secondAttribute="bottom" id="Xw7-Y5-eVE"/>
                                 <constraint firstItem="r9A-VG-Pgg" firstAttribute="height" secondItem="XTt-pq-YYi" secondAttribute="height" id="YEB-IE-dw7"/>
