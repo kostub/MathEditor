@@ -907,17 +907,26 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNv-XZ-eLu" userLabel="Bottom Bar Contariner">
                     <rect key="frame" x="0.0" y="185" width="320" height="40"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-kK-o4W">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-kK-o4W" userLabel="Search Button">
                             <rect key="frame" x="230" y="4" width="82" height="32"/>
                             <state key="normal" image="Search button"/>
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="BwQ-9R-edG"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-5f-aAF">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-5f-aAF" userLabel="Delete Button">
                             <rect key="frame" x="176" y="4" width="39" height="32"/>
                             <state key="normal" image="Delete button"/>
+                            <connections>
+                                <action selector="deleteButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="U3T-zG-EWP"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlm-aL-cQx">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlm-aL-cQx" userLabel="Clear Button">
                             <rect key="frame" x="8" y="4" width="52" height="32"/>
                             <state key="normal" image="Clear button"/>
+                            <connections>
+                                <action selector="clearButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="0PN-We-NRp"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>

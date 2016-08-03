@@ -138,6 +138,18 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 
 }
 
+- (IBAction)searchButtonTapped:(id)sender {
+    NSLog(@"Search button tapped");
+}
+
+- (IBAction)deleteButtonTapped:(id)sender {
+    NSLog(@"Delete button tapped");
+}
+
+- (IBAction)clearButtonTapped:(id)sender {
+    NSLog(@"Clear button tapped");    
+}
+
 #pragma mark - Helpers
 
 - (void) playClickForCustomKeyTap
