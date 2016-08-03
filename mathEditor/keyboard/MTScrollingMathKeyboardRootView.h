@@ -14,14 +14,6 @@
 @interface MTScrollingMathKeyboardRootView : UIView<MTMathKeyboard>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-- (IBAction)switchTabs:(UIButton *)sender;
-@property (weak, nonatomic) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet UIButton *numbersTab;
-@property (weak, nonatomic) IBOutlet UIButton *lettersTab;
-@property (weak, nonatomic) IBOutlet UIButton *functionsTab;
-@property (weak, nonatomic) IBOutlet UIButton *operationsTab;
-
-- (void) switchToDefaultTab;
 
 + (MTScrollingMathKeyboardRootView *)sharedInstance;
 
