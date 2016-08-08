@@ -8,13 +8,14 @@
 
 #import "MTKeyboardKeyButton.h"
 
-// Grayish color for when button is highlighted
-static UIColor *const kMTKeyboardKeyButtonHighlightedColor = [UIColor colorWithRed:80.f green:80.f blue:80.f alpha:1.f];
-static UIColor *const kMTKeyboardKeyButtonDefaultColor = [UIColor whiteColor];
-
 @implementation MTKeyboardKeyButton
 
 -(void) setHighlighted:(BOOL)highlighted {
+    
+    // Grayish color for when button is highlighted
+    UIColor *kMTKeyboardKeyButtonHighlightedColor = [UIColor colorWithRed:80.f green:80.f blue:80.f alpha:1.f];
+    UIColor *kMTKeyboardKeyButtonDefaultColor = [UIColor whiteColor];
+    
     [super setHighlighted:highlighted];
     
     if (highlighted == YES) {

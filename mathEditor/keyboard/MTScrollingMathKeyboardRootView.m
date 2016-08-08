@@ -57,7 +57,6 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 -(void)styleButton:(UIButton *)button
 {
     button.layer.cornerRadius = 5;
-    [button setbackgroun]
 }
 
 #pragma mark - MTMathKeyboardTraits

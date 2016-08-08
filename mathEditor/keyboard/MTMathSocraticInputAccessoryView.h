@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol MTMathSocraticInputAccessoryViewDelegate
+@class MTMathSocraticInputAccessoryView;
 
--(void)inputAccessoryViewSearchButtonTapped:(MTMathSocraticInputAccessoryView *)inputAccessoryView;
--(void)inputAccessoryViewDeleteButtonTapped:(MTMathSocraticInputAccessoryView *)inputAccessoryView;
--(void)inputAccessoryViewClearButtonTapped:(MTMathSocraticInputAccessoryView *)inputAccessoryView;
+@protocol MTMathSocraticInputAccessoryViewDelegate <NSObject>
+
+- (void) inputAccessoryViewSearchButtonTapped:(MTMathSocraticInputAccessoryView *)inputAccessoryView;
+
+- (void) inputAccessoryViewDeleteButtonTapped:(MTMathSocraticInputAccessoryView *)inputAccessoryView;
+
+- (void) inputAccessoryViewClearButtonTapped:(MTMathSocraticInputAccessoryView *)inputAccessoryView;
 
 @end
 
