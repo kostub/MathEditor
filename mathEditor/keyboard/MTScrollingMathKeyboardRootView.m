@@ -47,7 +47,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
         
         for (UIView *buttonView in columnView.subviews) {
             if ([buttonView isKindOfClass:[UIButton class]]) {
-                [self styleButton:(UIButton *)buttonView]
+                [self styleButton:(UIButton *)buttonView];
             }
         }
     }
