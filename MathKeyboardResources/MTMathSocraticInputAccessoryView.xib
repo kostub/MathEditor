@@ -7,20 +7,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzl-7M-lAH" userLabel="Bottom Bar Contariner">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzl-7M-lAH" userLabel="Bottom Bar Contariner" customClass="MTMathSocraticInputAccessoryView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqX-bZ-7Ti" userLabel="Search Button">
-                    <rect key="frame" x="230" y="4" width="82" height="32"/>
+                    <rect key="frame" x="230" y="6.5" width="82" height="32"/>
                     <state key="normal" image="Search button"/>
+                    <connections>
+                        <action selector="searchButtonTapped:" destination="Zzl-7M-lAH" eventType="touchUpInside" id="Ggj-7z-P0Z"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-ks-tEU" userLabel="Delete Button">
-                    <rect key="frame" x="176" y="4" width="39" height="32"/>
+                    <rect key="frame" x="176" y="6.5" width="39" height="32"/>
                     <state key="normal" image="Delete button"/>
+                    <connections>
+                        <action selector="deleteButtonTapped:" destination="Zzl-7M-lAH" eventType="touchUpInside" id="NAE-2R-00h"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsT-7i-gJd" userLabel="Clear Button">
-                    <rect key="frame" x="8" y="4" width="52" height="32"/>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsT-7i-gJd" userLabel="Clear Button">
+                    <rect key="frame" x="8" y="6.5" width="52" height="32"/>
                     <state key="normal" image="Clear button"/>
+                    <connections>
+                        <action selector="clearButtonTapped:" destination="Zzl-7M-lAH" eventType="touchUpInside" id="bW5-Go-Y8E"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,7 +38,7 @@
                 <constraint firstItem="cqX-bZ-7Ti" firstAttribute="leading" secondItem="N4a-ks-tEU" secondAttribute="trailing" constant="15" id="4yW-sM-S0l"/>
                 <constraint firstItem="cqX-bZ-7Ti" firstAttribute="centerY" secondItem="Zzl-7M-lAH" secondAttribute="centerY" id="6vv-l3-g0O"/>
                 <constraint firstItem="N4a-ks-tEU" firstAttribute="centerY" secondItem="cqX-bZ-7Ti" secondAttribute="centerY" id="nxo-80-FXi"/>
-                <constraint firstAttribute="height" constant="40" id="sIE-qS-WfH"/>
+                <constraint firstAttribute="height" constant="45" id="sIE-qS-WfH"/>
                 <constraint firstItem="TsT-7i-gJd" firstAttribute="centerY" secondItem="Zzl-7M-lAH" secondAttribute="centerY" id="uBk-BC-zSA"/>
                 <constraint firstItem="TsT-7i-gJd" firstAttribute="leading" secondItem="Zzl-7M-lAH" secondAttribute="leading" constant="8" id="zo9-2o-Cj7"/>
             </constraints>

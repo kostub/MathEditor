@@ -78,7 +78,7 @@
 
 @property (nonatomic) UIImageView* cancelImage;
 @property (nonatomic, weak) id<MTEditableMathLabelDelegate> delegate;
-@property (nonatomic, weak) UIView<MTMathAccessoryView>* accessoryView;
+@property (nonatomic) UIView<MTMathAccessoryView>* accessoryView;
 @property (nonatomic, weak) UIView<MTMathKeyboard>* keyboard;
 @property (nonatomic) CGFloat fontSize;
 @property (nonatomic) CGFloat paddingBottom;

@@ -47,12 +47,17 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
         
         for (UIView *buttonView in columnView.subviews) {
             if ([buttonView isKindOfClass:[UIButton class]]) {
-                UIButton *button = (UIButton *)buttonView;
-                button.layer.cornerRadius = 5;                
+                [self styleButton:(UIButton *)buttonView]
             }
         }
     }
     
+}
+
+-(void)styleButton:(UIButton *)button
+{
+    button.layer.cornerRadius = 5;
+    [button setbackgroun]
 }
 
 #pragma mark - MTMathKeyboardTraits
@@ -316,21 +321,6 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
             NSLog(@"Unsupport button tag click");
             break;
     }
-}
-
-- (IBAction)searchButtonTapped:(id)sender {
-    NSLog(@"Search button tapped");
-    [self.textView insertText:@"\n"];
-}
-
-- (IBAction)deleteButtonTapped:(id)sender {
-    NSLog(@"Delete button tapped");
-    [self.textView deleteBackward];
-}
-
-- (IBAction)clearButtonTapped:(id)sender {
-    NSLog(@"Clear button tapped");
-    // TODO: Add clear label functionality
 }
 
 #pragma mark - Helpers
