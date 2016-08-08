@@ -176,6 +176,11 @@
     return self.keyboard;
 }
 
+- (UIView *)inputAccessoryView
+{
+    return self.accessoryView;
+}
+
 /**
  UIResponder protocol override.
  Our view can become first responder to receive user text input.
