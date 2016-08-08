@@ -22,7 +22,7 @@
 
 @interface MTMathSocraticInputAccessoryView : UIView
 
-+ (MTMathSocraticInputAccessoryView *)accessoryView;
++ (MTMathSocraticInputAccessoryView *)defaultAccessoryView;
 
 @property (nonatomic, weak) id<MTMathSocraticInputAccessoryViewDelegate> delegate;
 

@@ -14,7 +14,7 @@
     static UIColor *defaultColor = nil;
     
     if (defaultColor == nil) {
-        defaultColor = self.setBackgroundColor;
+        defaultColor = self.backgroundColor;
     }
     
     return defaultColor;

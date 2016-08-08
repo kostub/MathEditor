@@ -12,7 +12,7 @@
     
 }
 
-+ (instancetype)accessoryView {
++ (instancetype)defaultAccessoryView {
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"MTKeyboardResources" withExtension:@"bundle"]];
     NSArray *nib = [bundle loadNibNamed:@"MTMathSocraticInputAccessoryView" owner:nil options:nil];
     
