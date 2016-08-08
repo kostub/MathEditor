@@ -8,7 +8,21 @@
 
 #import "MTMathSocraticInputAccessoryView.h"
 
-@implementation MTMathSocraticInputAccessoryView
+@implementation MTMathSocraticInputAccessoryView {
+    
+}
+
++ (instancetype)accessoryView {
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"MTKeyboardResources" withExtension:@"bundle"]];
+    NSArray *nib = [bundle loadNibNamed:@"MTMathSocraticInputAccessoryView" owner:nil options:nil];
+    
+    if (nib.count == 0) {
+        return nil;
+    }
+    
+    MTMathSocraticInputAccessoryView *view = nib[0];
+    return view;
+}
 
 - (IBAction)searchButtonTapped:(id)sender {
     NSLog(@"Search button tapped");
