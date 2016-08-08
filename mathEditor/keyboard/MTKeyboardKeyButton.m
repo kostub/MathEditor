@@ -8,17 +8,16 @@
 
 #import "MTKeyboardKeyButton.h"
 
-@implementation MTKeyboardKeyButton
-
-- (UIColor*) defaultColor {
-    static UIColor *defaultColor = nil;
-    
-    if (defaultColor == nil) {
-        defaultColor = self.backgroundColor;
-    }
-    
-    return defaultColor;
+@implementation MTKeyboardKeyButton {
+    UIColor *_originalBackgroundColor;
 }
+
+- (void) didMoveToSuperview {
+    [super didMoveToSuperview];
+    
+    _originalBackgroundColor = self.backgroundColor;
+}
+
 
 /** Overwrites UIButton's setHighlighted to add a highlight color when user highlights the button
  */
@@ -26,7 +25,7 @@
     
     // Grayish color for when button is highlighted
     UIColor *kMTKeyboardKeyButtonHighlightedColor = [UIColor colorWithRed:0.8f green:0.8f blue:0.8f alpha:1.f];
-    UIColor *kMTKeyboardKeyButtonDefaultColor = [self defaultColor];
+    UIColor *kMTKeyboardKeyButtonDefaultColor = _originalBackgroundColor;
     
     [super setHighlighted:highlighted];
     
