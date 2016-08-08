@@ -24,7 +24,7 @@
                         <action selector="deleteButtonTapped:" destination="Zzl-7M-lAH" eventType="touchUpInside" id="NAE-2R-00h"/>
                     </connections>
                 </button>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsT-7i-gJd" userLabel="Clear Button">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsT-7i-gJd" userLabel="Clear Button">
                     <rect key="frame" x="8" y="6.5" width="52" height="32"/>
                     <state key="normal" image="Clear button"/>
                     <connections>

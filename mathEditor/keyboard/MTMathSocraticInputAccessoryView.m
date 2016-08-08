@@ -11,20 +11,17 @@
 @implementation MTMathSocraticInputAccessoryView
 
 - (IBAction)searchButtonTapped:(id)sender {
-//    NSLog(@"Search button tapped");
-//    [self.textView insertText:@"\n"];
+    NSLog(@"Search button tapped");
     [self.delegate inputAccessoryViewSearchButtonTapped:self];
 }
 
 - (IBAction)deleteButtonTapped:(id)sender {
-//    NSLog(@"Delete button tapped");
-//    [self.textView deleteBackward];
+    NSLog(@"Delete button tapped");
     [self.delegate inputAccessoryViewDeleteButtonTapped:self];
 }
 
 - (IBAction)clearButtonTapped:(id)sender {
     NSLog(@"Clear button tapped");
-    // TODO: Add clear label functionality
     [self.delegate inputAccessoryViewClearButtonTapped:self];
 }
 
