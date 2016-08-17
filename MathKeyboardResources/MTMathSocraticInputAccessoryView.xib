@@ -11,21 +11,22 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqX-bZ-7Ti" userLabel="Search Button">
-                    <rect key="frame" x="230" y="6.5" width="82" height="32"/>
+                    <rect key="frame" x="218" y="3.5" width="94" height="38"/>
                     <state key="normal" image="Search button"/>
+                    <state key="disabled" image="Search button disabled"/>
                     <connections>
                         <action selector="searchButtonTapped:" destination="Zzl-7M-lAH" eventType="touchUpInside" id="Ggj-7z-P0Z"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-ks-tEU" userLabel="Delete Button">
-                    <rect key="frame" x="176" y="6.5" width="39" height="32"/>
+                    <rect key="frame" x="164" y="6.5" width="39" height="32"/>
                     <state key="normal" image="Delete button"/>
                     <connections>
                         <action selector="deleteButtonTapped:" destination="Zzl-7M-lAH" eventType="touchUpInside" id="NAE-2R-00h"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsT-7i-gJd" userLabel="Clear Button">
-                    <rect key="frame" x="8" y="6.5" width="52" height="32"/>
+                    <rect key="frame" x="8" y="6" width="52" height="32"/>
                     <state key="normal" image="Clear button"/>
                     <connections>
                         <action selector="clearButtonTapped:" destination="Zzl-7M-lAH" eventType="touchUpInside" id="bW5-Go-Y8E"/>
@@ -44,11 +45,15 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchButton" destination="cqX-bZ-7Ti" id="r9q-dL-fpi"/>
+            </connections>
         </view>
     </objects>
     <resources>
         <image name="Clear button" width="52" height="32"/>
         <image name="Delete button" width="39" height="32"/>
-        <image name="Search button" width="82" height="32"/>
+        <image name="Search button" width="94" height="38"/>
+        <image name="Search button disabled" width="94" height="38"/>
     </resources>
 </document>

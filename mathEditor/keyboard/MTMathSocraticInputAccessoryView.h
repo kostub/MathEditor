@@ -25,5 +25,6 @@
 + (MTMathSocraticInputAccessoryView *)defaultAccessoryView;
 
 @property (nonatomic, weak) id<MTMathSocraticInputAccessoryViewDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
 
 @end
