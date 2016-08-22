@@ -9,5 +9,5 @@ target 'MathEditor_Tests' do
   pod 'MathEditor', :path => './'
 end
 target 'MathEditor' do
-    pod 'iosMath'
+    pod 'iosMath', :git => 'https://github.com/socraticorg/iosMath.git' # This library relies on an edited version of iosMath for additional functionality.
 end
