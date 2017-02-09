@@ -16,6 +16,7 @@
 #import "MTDisplay+Editing.h"
 #import "MTMathListBuilder.h"
 #import "MTFontManager.h"
+#import "MTTypesetter.h"
 
 @interface MTDisplayEditingTest : XCTestCase
 
