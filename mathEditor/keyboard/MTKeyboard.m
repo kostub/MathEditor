@@ -59,6 +59,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     // Initialization code
     NSString* fontName = [self registerAndGetFontName];
     for (UIButton* varButton in self.variables) {

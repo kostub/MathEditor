@@ -51,6 +51,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 
 -(void)awakeFromNib
 {
+    [super awakeFromNib];
     // initialize all keyboards first
     NSBundle* bundle = [MTMathKeyboardRootView getMathKeyboardResourcesBundle];
 
