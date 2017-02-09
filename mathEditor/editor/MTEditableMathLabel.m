@@ -135,24 +135,14 @@
     return self.label.fontSize;
 }
 
-- (void)setPaddingBottom:(CGFloat)paddingBottom
+- (void)setContentInsets:(UIEdgeInsets)contentInsets
 {
-    self.label.paddingBottom = paddingBottom;
+    self.label.contentInsets = contentInsets;
 }
 
-- (CGFloat)paddingBottom
+- (UIEdgeInsets)contentInsets
 {
-    return self.label.paddingBottom;
-}
-
-- (void)setPaddingTop:(CGFloat)paddingTop
-{
-    self.label.paddingTop = paddingTop;
-}
-
-- (CGFloat)paddingTop
-{
-    return self.label.paddingTop;
+    return self.label.contentInsets;
 }
 
 - (CGSize) mathDisplaySize
@@ -412,13 +402,21 @@
 
 #pragma mark - UIKeyInput
 
+static const unichar kMTUnicodeGreekLowerStart = 0x03B1;
+static const unichar kMTUnicodeGreekLowerEnd = 0x03C9;
+static const unichar kMTUnicodeGreekCapitalStart = 0x0391;
+static const unichar kMTUnicodeGreekCapitalEnd = 0x03A9;
+
 - (MTMathAtom*) atomForCharacter:(unichar) ch
 {
     NSString *chStr = [NSString stringWithCharacters:&ch length:1];
     
-    // Ensure all symbols are included
-    
-    if ([chStr isEqualToString:MTSymbolMultiplication]) {
+    // Get the basic conversion from MTMathAtomFactory, and then special case
+    // unicode characters and latex special characters.
+    MTMathAtom* atom = [MTMathAtomFactory atomForCharacter:ch];
+    if (atom) {
+        return atom;
+    } else if ([chStr isEqualToString:MTSymbolMultiplication]) {
         return [MTMathAtomFactory times];
     } else if ([chStr isEqualToString:MTSymbolSquareRoot]) {
         return [MTMathAtomFactory placeholderSquareRoot];
@@ -432,28 +430,21 @@
         return [MTMathAtomFactory divide];
     } else if ([chStr isEqualToString:MTSymbolFractionSlash]) {
         return [MTMathAtomFactory placeholderFraction];
-    } else if (ch == '(' || ch == '[' || ch == '{') {
+    } else if (ch == '{') {
         return [MTMathAtom atomWithType:kMTMathAtomOpen value:chStr];
-    } else if (ch == ')' || ch == ']' || ch == '}') {
+    } else if (ch == '}') {
         return [MTMathAtom atomWithType:kMTMathAtomClose value:chStr];
-    } else if (ch == ',' || ch == ';') {
-        return [MTMathAtom atomWithType:kMTMathAtomPunctuation value:chStr];
-    } else if (ch == '=' || ch == '<' || ch == '>' || ch == ':' || [chStr isEqualToString:MTSymbolGreaterEqual] || [chStr isEqualToString:MTSymbolLessEqual]) {
+    } else if ([chStr isEqualToString:MTSymbolGreaterEqual] ||
+               [chStr isEqualToString:MTSymbolLessEqual]) {
         return [MTMathAtom atomWithType:kMTMathAtomRelation value:chStr];
-    } else if (ch == '+' || ch == '-') {
-        return [MTMathAtom atomWithType:kMTMathAtomBinaryOperator value:chStr];
     } else if (ch == '*') {
         return [MTMathAtomFactory times];
     } else if (ch == '/') {
         return [MTMathAtomFactory divide];
-    } else if ([self isNumeric:ch]) {
-        return [MTMathAtom atomWithType:kMTMathAtomNumber value:chStr];
-    } else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
-        return [MTMathAtom atomWithType:kMTMathAtomVariable value:chStr];
-    } else if (ch >= kMTUnicodeGreekStart && ch <= kMTUnicodeGreekEnd) {
+    } else if (ch >= kMTUnicodeGreekLowerStart && ch <= kMTUnicodeGreekLowerEnd) {
         // All greek chars are rendered as variables.
         return [MTMathAtom atomWithType:kMTMathAtomVariable value:chStr];
-    } else if (ch >= kMTUnicodeCapitalGreekStart && ch <= kMTUnicodeCapitalGreekEnd) {
+    } else if (ch >= kMTUnicodeGreekCapitalStart && ch <= kMTUnicodeGreekCapitalEnd) {
         // Including capital greek chars
         return [MTMathAtom atomWithType:kMTMathAtomVariable value:chStr];
     } else if (ch < 0x21 || ch > 0x7E || ch == '\'' || ch == '~') {
@@ -695,9 +686,7 @@
     MTMathAtom* atom;
     if (str.length > 1) {
         // Check if this is a supported command
-        NSDictionary* commands = [MTMathListBuilder supportedCommands];
-        MTMathAtom* factoryAtom = commands[str];
-        atom = [factoryAtom copy]; // Make a copy here since atoms are mutable and we don't want to update the atoms in the map.
+        atom = [MTMathAtomFactory atomForLatexSymbolName:str];
     } else {
         atom = [self atomForCharacter:ch];
     }

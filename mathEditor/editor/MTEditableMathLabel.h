@@ -71,8 +71,7 @@
 @property (nonatomic, weak) id<MTEditableMathLabelDelegate> delegate;
 @property (nonatomic, weak) UIView<MTMathKeyboard>* keyboard;
 @property (nonatomic) CGFloat fontSize;
-@property (nonatomic) CGFloat paddingBottom;
-@property (nonatomic) CGFloat paddingTop;
+@property (nonatomic) IBInspectable UIEdgeInsets contentInsets;
 
 - (void) clear;
 

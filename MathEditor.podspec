@@ -19,5 +19,5 @@ typesetting rules.
      'MTKeyboardResources' => 'MathKeyboardResources/**/*'
   }
   s.frameworks = 'UIKit'
-  s.dependency 'iosMath', '~> 0.7.3'
+  s.dependency 'iosMath', '~> 0.9.3'
 end
