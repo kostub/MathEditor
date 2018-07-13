@@ -534,7 +534,7 @@ static CGFloat distanceFromPointToRect(CGPoint point, CGRect rect) {
 
 - (CGPoint)caretPositionForIndex:(MTMathListIndex *)index
 {
-    CGPoint position = kInvalidPosition;
+    CGPoint position;
     if (!index) {
         return kInvalidPosition;
     }
