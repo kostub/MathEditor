@@ -1004,7 +1004,8 @@ static const unichar kMTUnicodeGreekCapitalEnd = 0x03A9;
 }
 - (NSArray *)selectionRectsForRange:(UITextRange *)range
 {
-    return nil;
+    // NOTE: Must return non-nil NSArray* according to UIKit/Headers/UITextInput.h
+    return [NSArray array];
 }
 - (void)setBaseWritingDirection:(UITextWritingDirection)writingDirection forRange:(UITextRange *)range
 {
