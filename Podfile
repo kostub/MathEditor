@@ -9,5 +9,8 @@ target 'MathEditor_Tests' do
   pod 'MathEditor', :path => './'
 end
 target 'MathEditor' do
-    pod 'iosMath'
+    # Kellyroach/fix warnings (#103) has been approved and merged onto iosMath master
+    # at commit = 4f46aff6b745676ff3d98752bb7f5189fc448843 , but isn't released on
+    # COCOAPODS.ORG yet.  Temporarily, modify Podfile on our branch to point to this commit.
+    pod 'iosMath', :git => 'https://github.com/kostub/iosMath.git', :commit => '4f46aff6b745676ff3d98752bb7f5189fc448843'
 end
