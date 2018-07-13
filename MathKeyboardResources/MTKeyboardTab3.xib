@@ -262,7 +262,7 @@
                     <state key="normal" image="Exponent">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <state key="selected" backgroundImage="keyboard-marine-pressed"/>
+                    <state key="selected" backgroundImage="Keyboard-marine-pressed"/>
                     <state key="highlighted" backgroundImage="Keyboard-marine-pressed"/>
                     <connections>
                         <action selector="exponentPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="nA4-de-xR0"/>
@@ -476,7 +476,7 @@
         <image name="Sqrt with Power" width="50" height="44"/>
         <image name="Subscript" width="50" height="44"/>
         <image name="Subscript Inverted" width="50" height="44"/>
-        <image name="keyboard-marine-pressed" width="44" height="44"/>
+        <image name="Keyboard-marine-pressed" width="44" height="44"/>
         <image name="num-button-disabled" width="44" height="44"/>
     </resources>
 </document>
