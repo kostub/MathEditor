@@ -976,7 +976,12 @@ static const unichar kMTUnicodeGreekCapitalEnd = 0x03A9;
 }
 - (id)insertDictationResultPlaceholder
 {
-    return nil;
+    // NOTE: "Implementation of this method is optional ...
+    // The actual contents of the object are not accessed by UIKit but
+    // you can use the object to store whatever information you need
+    // to identify the location for the animation."
+    // https://developer.apple.com/documentation/uikit/uitextinput/1614466-insertdictationresultplaceholder?language=objc
+    return [NSObject new];
 }
 
 - (NSInteger)offsetFromPosition:(UITextPosition *)fromPosition toPosition:(UITextPosition *)toPosition
