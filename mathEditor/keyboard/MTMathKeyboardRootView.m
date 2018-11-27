@@ -143,14 +143,27 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 {
     view.translatesAutoresizingMaskIntoConstraints = NO;
     NSDictionary *views = NSDictionaryOfVariableBindings(view);
+    
+    UIEdgeInsets parentInsets = parent.safeAreaInsets;
+    
+    NSString *bottomMargin = [NSString stringWithFormat:@"%.0f", parentInsets.bottom];
+    
+    NSLog(@"HERE: %.0f", parentInsets.bottom);
+    
+//    if (@available(iOS 11.0, *)) {
+//        parentInsets = parent.safeAreaInsets;
+//    } else {
+//        // Fallback on earlier versions
+//    }
+    
     [parent addSubview:view];
     [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|"
                                                                    options:0
                                                                    metrics:nil
                                                                      views:views]];
-    [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|"
+    [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]-bottomMargin-|"
                                                                    options:0
-                                                                   metrics:nil
+                                                                   metrics:@{@"bottomMargin": bottomMargin}
                                                                      views:views]];
 }
 
