@@ -1,6 +1,6 @@
 # MathEditor
 
-[![CI Status](http://img.shields.io/travis/kostub/MathEditor.svg?style=flat)](https://travis-ci.org/kostub/MathEditor)
+[![CI Status](http://img.shields.io/travis/StjepanPoljak/MathEditor.svg?style=flat)](https://travis-ci.org/StjepanPoljak/MathEditor)
 [![Version](https://img.shields.io/cocoapods/v/MathEditor.svg?style=flat)](http://cocoapods.org/pods/MathEditor)
 [![License](https://img.shields.io/cocoapods/l/MathEditor.svg?style=flat)](http://cocoapods.org/pods/MathEditor)
 [![Platform](https://img.shields.io/cocoapods/p/MathEditor.svg?style=flat)](http://cocoapods.org/pods/MathEditor)

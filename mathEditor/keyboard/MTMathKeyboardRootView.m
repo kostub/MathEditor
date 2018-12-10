@@ -130,7 +130,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
     _currentKeyboard.alpha = 1.0;
     [UIView animateWithDuration:0.1 animations:^{
         newKeyboard.alpha = 1.0;
-        _currentKeyboard.alpha = 0.5;
+        self->_currentKeyboard.alpha = 0.5;
     }];
 
     [_contentView bringSubviewToFront:newKeyboard];
@@ -143,15 +143,23 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 {
     view.translatesAutoresizingMaskIntoConstraints = NO;
     NSDictionary *views = NSDictionaryOfVariableBindings(view);
+    
+    CGFloat bottomPadding = 0.0;
+    
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = UIApplication.sharedApplication.windows[0];
+        bottomPadding = window.safeAreaInsets.bottom;
+    }
+
     [parent addSubview:view];
-    [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|"
-                                                                   options:0
-                                                                   metrics:nil
-                                                                     views:views]];
-    [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|"
-                                                                   options:0
-                                                                   metrics:nil
-                                                                     views:views]];
+    [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat: @"H:|[view]|"
+                                                                   options: 0
+                                                                   metrics: nil
+                                                                     views: views]];
+    [parent addConstraints:[NSLayoutConstraint constraintsWithVisualFormat: @"V:|[view]-bottomMargin-|"
+                                                                   options: 0
+                                                                   metrics: @{@"bottomMargin": [NSString stringWithFormat: @"%.0f", bottomPadding]}
+                                                                     views: views]];
 }
 
 #pragma mark - MTMathKeyboardTraits

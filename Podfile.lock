@@ -1,20 +1,24 @@
 PODS:
   - iosMath (0.9.3)
-  - MathEditor (0.2.0):
+  - MathEditor (0.3.0):
     - iosMath (~> 0.9.3)
 
 DEPENDENCIES:
   - iosMath
   - MathEditor (from `./`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iosMath
+
 EXTERNAL SOURCES:
   MathEditor:
-    :path: ./
+    :path: "./"
 
 SPEC CHECKSUMS:
   iosMath: 619e53c34dfa19ac3062869f9974747b44507083
-  MathEditor: e93c1344182203e0eafe5c95a6c424a3bbc89bbd
+  MathEditor: f470005e0d04126644a80b7a245d7ce7c68a9e40
 
 PODFILE CHECKSUM: 824592d1d06afe0a23f07736e4e1f8968e497263
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.6.0.beta.1
