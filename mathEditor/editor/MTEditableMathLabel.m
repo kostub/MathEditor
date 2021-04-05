@@ -362,6 +362,7 @@
 
 - (void) setKeyboardMode
 {
+    self.keyboard.equalsAllowed = YES;
     self.keyboard.exponentHighlighted = NO;
     self.keyboard.radicalHighlighted = NO;
     self.keyboard.squareRootHighlighted = NO;
