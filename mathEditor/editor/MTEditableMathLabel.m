@@ -117,6 +117,26 @@
     [self insertionPointChanged];
 }
 
+- (void)setTextColor:(UIColor *)textColor
+{
+    self.label.textColor = textColor;
+}
+
+- (UIColor*)textColor
+{
+    return self.label.textColor;
+}
+
+- (void)setCaretColor:(UIColor *)caretColor
+{
+    _caretView.caretColor = caretColor;
+}
+
+- (UIColor *)caretColor
+{
+    return _caretView.caretColor;
+}
+
 - (void)setBackgroundColor:(UIColor *)backgroundColor
 {
     [super setBackgroundColor:backgroundColor];
