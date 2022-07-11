@@ -47,7 +47,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 +(NSBundle *)getMathKeyboardResourcesBundle
 {
 #ifdef SWIFTPM_MODULE_BUNDLE
-    return SWIFTPM_MODULE_BUNDLE
+    return SWIFTPM_MODULE_BUNDLE;
 #endif
     return [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"MTKeyboardResources" withExtension:@"bundle"]];
 }
