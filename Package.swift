@@ -38,6 +38,11 @@ let package = Package(
                 .process("../MathKeyboardResources/NewKeyboardAssets.xcassets"),
                 .process("../MathKeyboardResources/WhiteBGKeyboardTab.xcassets"),
                 .process("../MathKeyboardResources/lmroman10-bolditalic.otf"),
+            ],
+            cSettings: [
+                .headerSearchPath("editor"),
+                .headerSearchPath("internal"),
+                .headerSearchPath("keyboard"),
             ]
         ),
         .testTarget(
