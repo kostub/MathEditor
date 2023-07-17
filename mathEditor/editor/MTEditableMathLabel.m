@@ -921,10 +921,12 @@ static const unichar kMTUnicodeGreekCapitalEnd = 0x03A9;
 @synthesize selectedTextRange;
 @synthesize tokenizer;
 
+#if !TARGET_OS_XR
 - (UITextWritingDirection)baseWritingDirectionForPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction
 {
     return UITextWritingDirectionLeftToRight;
 }
+#endif
 
 - (CGRect)caretRectForPosition:(UITextPosition *)position
 {
@@ -1006,9 +1008,11 @@ static const unichar kMTUnicodeGreekCapitalEnd = 0x03A9;
 {
     return nil;
 }
+#if !TARGET_OS_XR
 - (void)setBaseWritingDirection:(UITextWritingDirection)writingDirection forRange:(UITextRange *)range
 {
 }
+#endif
 - (void)setMarkedText:(NSString *)markedText selectedRange:(NSRange)selectedRange
 {
 }
