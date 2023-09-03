@@ -110,7 +110,9 @@
 
 - (void) playClickForCustomKeyTap
 {
+#if !TARGET_OS_XR
     [[UIDevice currentDevice] playInputClick];
+#endif
 }
 
 - (void)fractionPressed:(id)sender
